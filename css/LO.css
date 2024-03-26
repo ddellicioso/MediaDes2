@@ -2,7 +2,7 @@ body {
     background-color: #FFF2EB;
     margin: 0;
     padding: 0;
-    /* overflow: hidden; */
+    overflow: hidden;
 
 }
 
@@ -12,16 +12,24 @@ body {
 
 nav {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     color: black;
-    padding: 10px 20px
+    padding: 10px 20px;
+    z-index: -1;
 }
 
 nav ul {
     color: black;
     text-decoration: none;
     padding: 10px; 
+}
+
+.homelogo {
+    display: flex;
+    position: absolute;
+    top: 5%;
 }
 
 .dropbtn {
@@ -37,13 +45,15 @@ nav ul {
   padding: 10px;
 }
 
-  .dropbtn:hover, .dropbtn:focus, dropbtn:active {
+.dropbtn:hover, .dropbtn:focus, .dropbtn:active {
   background-color: #f18ea4;
 }
   
 .dropdown {
-    position: relative;
-    display: inline-block;
+    display: flex;
+    position: absolute;
+    left: 95%;
+    top: 5%;
 }
 
 .dropdown-content.show {

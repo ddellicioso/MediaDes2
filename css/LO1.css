@@ -3,13 +3,20 @@
     padding: 0;
 }
 
+:root {
+    --1st-color: #FFF2EB;
+    --2nd-color: #d7a0bd;
+    --3rd-color: #dabbcb43;
+    --4th-color: #c587a75b;
+}
+
 body {
-    background: rgb(242, 219, 229);
+    background: var(--1st-color);
 }
 
 .title {
     display: flex;
-    background-color: rgb(197, 135, 167);
+    background-color: var(--2nd-color);
     position: absolute;
     width: 20%;
     top: 5%;
@@ -20,6 +27,55 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+/*navigation*/
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Initially hidden) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on click of the button */
+  .dropdown.active .dropdown-content {
+    display: block;
+  }
+  
+
 
 .container {
     display: flex;
@@ -40,7 +96,7 @@ body {
 
 .eggs, .flour, .sugar  {
     position: relative;
-    background-color:rgba(218, 172, 196, 0.264);
+    background-color: var(--3rd-color);
     border-radius: 10px;
     margin: 10px;
     text-decoration: none;
@@ -65,5 +121,7 @@ body {
 }
 
 .eggs:hover, .flour:hover, .sugar:hover{
-    background-color:rgba(197, 135, 167, 0.358);
+    transition: all 0.3s ease-in-out; /* Smooth transition effect */
+    transform: scale(1.1); /* Expand to 110% size on hover */
+    background-color: var(--4th-color);
 }
