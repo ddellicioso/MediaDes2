@@ -3,18 +3,26 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/LO1.css">
+        <script src="script.js"></script>
         <title>Learning Outcome 1</title>
     </head>
     <body>
         <nav>
-            <div class="dropdown">
-                <button class="dropbtn">Dropdown</button>
-                <div id="myDropdown" class="dropdown-content">
-                  <a href="#">Link 1</a>
-                  <a href="#">Link 2</a>
-                  <a href="#">Link 3</a>
+            <a href="patisserie.html" class="homelogo">
+                <img src="./images/Asset 5.png" class="homelogo"> 
+              </a>
+        
+              <div class="dropdown">
+                <button onclick="toggleMenu()" class="dropbtn">☰</button>
+                <div id="dropdownContent" class="dropdown-content">
+                  <input type="text" class="input" id="mySearch" onkeyup="filterMenu()" placeholder="Search..." title="Type in a category">
+                  <ul id="myMenu">
+                    <li><a href="#">Learning Outcomes</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Abouts</a></li>
+                  </ul>
                 </div>
-              </div>              
+              </div>             
         </nav>
 
 
@@ -56,5 +64,34 @@
 
         </div>
 
+        <script>
+            const dropdownContent = document.getElementById("dropdownContent");
+
+            function toggleMenu() {
+            dropdownContent.classList.toggle("show");
+            }
+
+            function filterMenu() {
+            const input = document.getElementById("mySearch");
+            const filter = input.value.toUpperCase();
+            const ul = document.getElementById("myMenu");
+            const li = ul.getElementsByTagName("li");
+
+            for (let i = 0; i < li.length; i++) {
+                const a = li[i].getElementsByTagName("a")[0];
+                const txtValue = a.textContent || a.innerText; // Handle potential textContent issues
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+                } else {
+                li[i].style.display = "none";
+                }
+            }
+            }
+
+            // Initialize the dropdown to be hidden by default
+            window.onload = function() {
+            dropdownContent.classList.remove("show");
+            }
+        </script>
     </body>
 </html>

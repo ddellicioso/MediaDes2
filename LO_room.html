@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/LO_room.css">
+ 
+  <title>Learning Outcomes</title>
+</head>
+<body>
+    <div class="container">
+       <img src="./images/Asset 13.png" class="curtain"> 
+       <img src="./images/Asset 16.png" class="shelfs">
+
+       <div class="texts">
+        <a href="LO1.html" id="LO1">Learning Outcomes 1</a>
+        <a href="#" id="LO2">Learning Outcomes 2</a>
+        <a href="#" id="LO3">Learning Outcomes 3</a>
+        <a href="#" id="LO4">Learning Outcomes 4</a>
+        <a href="#" id="LO5">Learning Outcomes 5</a>
+       </div>
+    </div>
+  <main>
+    <nav>
+      <a href="patisserie.html" class="homelogo">
+        <img src="./images/Asset 5.png" class="homelogo"> 
+      </a>
+
+      <div class="dropdown">
+        <button onclick="toggleMenu()" class="dropbtn"> ☰ </button>
+        <div id="dropdownContent" class="dropdown-content">
+          <div class="search-wrapper"> 
+            <input type="text" class="input" id="mySearch" onkeyup="filterMenu()" placeholder="Search..." title="Type in a category">
+          </div>
+          <ul id="myMenu">
+            <li class="has-submenu">
+              <div>
+                <a href="#">Learning Outcomes</a>
+                <ul class="submenu">
+                  <li><a href="#">LO1</a></li>
+                  <li><a href="#">Submenu Item 2</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="has-submenu">
+              <div>
+                <a href="#">Projects</a>
+                <ul class="submenu">
+                  <li><a href="#">Submenu Item 1</a></li>
+                  <li><a href="#">Submenu Item 2</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="#">Abouts</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      
+      
+    </nav>
+
+
+    
+  </main>
+
+  <script>
+    
+  const dropdownContent = document.getElementById("dropdownContent");
+  const submenus = document.querySelectorAll(".has-submenu");
+
+  function toggleMenu() {
+    dropdownContent.classList.toggle("show");
+  }
+
+  function filterMenu() {
+    const input = document.getElementById("mySearch");
+    const filter = input.value.toUpperCase();
+    const ul = document.getElementById("myMenu");
+    const li = ul.getElementsByTagName("li");
+
+    for (let i = 0; i < li.length; i++) {
+      const a = li[i].getElementsByTagName("a")[0];
+      const txtValue = a.textContent || a.innerText; // Handle potential textContent issues
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = "";
+      } else {
+        li[i].style.display = "none";
+      }
+    }
+  }
+  
+  submenus.forEach(submenu => {
+    submenu.addEventListener("mouseover", () => {
+      const submenuList = submenu.querySelector(".submenu");
+      submenuList.classList.add("show");
+    });
+
+    submenu.addEventListener("mouseout", () => {
+      const submenuList = submenu.querySelector(".submenu");
+      submenuList.classList.remove("show");
+    });
+  });
+
+
+  // Initialize the dropdown to be hidden by default
+  window.onload = function() {
+    dropdownContent.classList.remove("show");
+  }
+  </script>
+
+  <!-- <script src="script.js"></script> -->
+</body>
+</html>
