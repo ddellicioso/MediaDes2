@@ -2,7 +2,7 @@ body {
     background-color: #FFF2EB;
     margin: 0;
     padding: 0;
-    
+    overflow: hidden;
 
 }
 
@@ -18,12 +18,12 @@ body {
         align-items: center;
         color: black;
         padding: 10px 20px;
-        z-index: -1;
+        /* z-index: 1; */
     }
 
     nav ul {
         color: black;
-        text-decoration: none;
+        list-style-type: none;
         padding: 10px; 
     }
 
@@ -31,13 +31,15 @@ body {
         display: flex;
         position: absolute;
         top: 5%;
+        z-index: 3;
+        width: 20%;
     }
 
     .dropbtn {
         background-color: pink;
         color: rgb(0, 0, 0);
-        padding: 16px;
-        font-size: 16px;
+        padding: 1em;
+        font-size: 1vw;
         border: none;
         cursor: pointer;
     }
@@ -55,6 +57,7 @@ body {
         position: absolute;
         left: 95%;
         top: 5%;
+        z-index: 3;
     }
 
     .dropdown-content.show {
@@ -65,18 +68,20 @@ body {
         display: none;
         position: absolute;
         background-color: #f1f1f1;
-        min-width: 160px;
-        max-height: 400px;
+        min-width: 8rem;
+        max-height: 20rem;
         overflow: scroll;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
         right: 100%;
         top: 0;
+        width: 10%;
     }
     
     .dropdown-content a {
+        font-size: 1vw;
         color: black;
-        padding: 12px 16px;
+        padding: 0.6rem ;
         text-decoration: none;
         display: block;
     }
@@ -84,7 +89,6 @@ body {
     
     .dropdown a:hover {
         background-color: #ddd;
-        padding: 10px;
     }
 
     .search-wrapper {
@@ -93,22 +97,26 @@ body {
         z-index: 1;
     }
 
+    .search-wrapper input {
+        font-size: 1vw;
+        width: 80%;
+    }
+
     .submenu {
         list-style-type: none;
     }
 
   
 /* learning outcome page */
-
     .container {
         position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
-        overflow: hidden;
-        
+        overflow: hidden;  
     }
 
+    
     .curtain {
         width: 100%;
         z-index: -2;
@@ -116,23 +124,77 @@ body {
 
     .shelfs {
         position: absolute;
-        top: 30%;
+        top: 26%;
         z-index: -2;
+        width: 58%;
+    }
+    
+    .curtain-left {
+        position: absolute;
+        top: 50%;
+        /* left: 13%; */
+        width: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        animation: moveDoorLeft 3.5s forwards;
+    }
+    
+    @keyframes moveDoorLeft {
+        from {
+            left: 25%;
+        }
+        to {
+            left: -5%;
+        }
+    }
+    
+    .curtain-right {
+        position: absolute;
+        top: 50%;
+        width: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        animation: moveDoorRight 3.5s forwards;
+    }
+    
+    @keyframes moveDoorRight {
+        from {
+            left: 80%;
+        }
+        to {
+            left: 105%;
+        }
     }
 
+    .decoration {
+        position: absolute;
+        z-index: 3;
+        width: 110%;
+        animation: moveDecoration 3.5s forwards;
+    }
+
+    @keyframes moveDecoration {
+        from {
+            top: 0%;
+        }
+        
+        to {
+            top: -25%;
+        }
+    }
     .container .texts a {
         display: flex;
         position: absolute;
         text-decoration: none;
-        font-size: 1.2 vw;
+        font-size: 1vw;
     }
 
     #LO1 {
         position: absolute;
-        top: 30%;
+        top: 27%;
         left: 30%;
         background-color: #f5bcc9;
-        padding: 13px;
+        padding: 1em;
         z-index: 1;
         color: black;
     }
@@ -144,10 +206,10 @@ body {
 
     #LO2 {
         position: absolute;
-        top: 30%;
+        top: 27%;
         left: 45%;
         background-color: #f5bcc9;
-        padding: 13px;
+        padding: 1em;
         z-index: 1;
         color: black;
     }
@@ -158,10 +220,10 @@ body {
 
     #LO3 {
         position: absolute;
-        top: 30%;
+        top: 27%;
         left: 60%;
         background-color: #f5bcc9;
-        padding: 13px;
+        padding: 1em;
         z-index: 1;
         color: black;
     }
@@ -173,10 +235,10 @@ body {
 
     #LO4 {
         position: absolute;
-        top: 55%;
+        top: 57%;
         left: 37%;
         background-color: #f5bcc9;
-        padding: 13px;
+        padding: 1em;
         z-index: 1;
         color: black;
     }
@@ -187,10 +249,10 @@ body {
 
     #LO5 {
         position: absolute;
-        top: 55%;
+        top: 57%;
         left: 52.5%;
         background-color: #f5bcc9;
-        padding: 13px;
+        padding: 1em;
         z-index: 1;
         color: black;
     }

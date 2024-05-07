@@ -1,0 +1,163 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/LO_content.css">
+        <script src="script.js"></script>
+        <title>Portfolio - LO1</title>
+    </head>
+    <body>
+        <nav>
+            <a href="patisserie.html" class="homelogo">
+                <img src="./images/Asset 5.png" class="homelogo"> 
+              </a>
+        
+            <div class="dropdown">
+                <button onclick="toggleMenu()" class="dropbtn"> ☰ </button>
+                <div id="dropdownContent" class="dropdown-content">
+                    <div class="search-wrapper"> 
+                        <input type="text" class="input" id="mySearch" onkeyup="filterMenu()" placeholder="Search..." title="Type in a category">
+                    </div>
+                    <ul id="myMenu">
+                    <li class="has-submenu">
+                        <div>
+                            <a href="LO_room.html">Learning Outcomes</a>
+                            <ul class="submenu">
+                                <li><a href="LO1.html">LO 1</a></li>
+                                <li><a href="LO2.html">LO 2</a></li>
+                                <li><a href="LO3.html">LO 3</a></li>
+                                <li><a href="LO4.html">LO 4</a></li>
+                                <li><a href="LO5.html">LO 5</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="has-submenu">
+                        <div>
+                            <a href="#">Projects</a>
+                            <ul class="submenu">
+                                <li><a href="#">Submenu Item 1</a></li>
+                                <li><a href="#">Submenu Item 2</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">Abouts</a></li>
+                    </ul>
+                </div>
+            </div>              
+        </nav>
+        <main>
+            <div class="main-container">
+                <header style="width: 30%;">Portfolio</header><br>
+                <div class="carousel-container" >
+                    <div class="carousel">
+                        <div class="carousel-item">
+                            <div class="numbertext">1/4 <br>
+                            <img src="./images/Screenshot 2024-03-11 205107.png" alt="feedpulse" >
+                            </div>    
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="numbertext">2/4 <br>
+                            <img src="./images/IMG_1842.PNG" alt="Notion">
+                            </div>        
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="numbertext">3/4 <br>
+                            <img src="./images/IMG_1859.PNG" alt="Notion">
+                            </div>        
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="numbertext">4/4 <br>
+                            <img src="./images/patisserie.png" alt="Notion">
+                            </div>        
+                        </div>
+                    
+                        
+                    </div>
+                      
+                    
+                    <button class="prev" onclick="moveCarousel(-1)">❮</button>
+                    <button class="next" onclick="moveCarousel(1)">❯</button>
+                </div>
+
+                
+                <div class="Description">
+                    <div class="desc-text">
+                        <h3>Description</h3>
+                        <p>Trying different techniques for the portfolio, prototypes</p>    
+                    </div>
+                    
+                    <aside>
+                        <h3>Links</h3>
+                        <a href="https://www.figma.com/file/Lrn9pBiNfpGMuepb7oTMVH/Untitled?type=design&mode=design&t=I6EUKPumNbcLNjus-1">Figma Prototype</a>
+                        <!-- <a href="">Conclusion of the Survey</a> -->
+                        <!-- <a href="">Success Video</a> -->
+                    </aside>
+                </div>
+
+                
+            </div>
+
+            <div class="secondary-container">
+                <div class="Feedback">
+                    <header>Feedback</header> <br>
+                    <section>-</section>
+                </div>
+
+                <div class="Reflection">
+                    <header>Reflection</header> <br>
+                    <section> First of all I used Figma to implement my ideas and i directly tested them out on the teachers (5 teachers) to know if they has any problem with my layouts, colors, etc. <br><br>
+                            My first idea was to hand drawn the elements but then i realized that it will be too much of a hassle and so i decided to use Adobe Illustrator.
+                    </section>
+                </div>
+            </div>
+        </main>
+
+        <script>
+            let currentIndex = 0;
+
+            function moveCarousel(direction) {
+            const carousel = document.querySelector('.carousel');
+            const carouselWidth = carousel.clientWidth;
+            const numItems = carousel.children.length;
+
+            currentIndex = (currentIndex + direction + numItems) % numItems;
+            const offset = -currentIndex * carouselWidth;
+
+            carousel.style.transform = `translateX(${offset}px)`;
+            }
+
+
+
+            const dropdownContent = document.getElementById("dropdownContent");
+
+            function toggleMenu() {
+            dropdownContent.classList.toggle("show");
+            }
+
+            function filterMenu() {
+            const input = document.getElementById("mySearch");
+            const filter = input.value.toUpperCase();
+            const ul = document.getElementById("myMenu");
+            const li = ul.getElementsByTagName("li");
+
+            for (let i = 0; i < li.length; i++) {
+                const a = li[i].getElementsByTagName("a")[0];
+                const txtValue = a.textContent || a.innerText; // Handle potential textContent issues
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+                } else {
+                li[i].style.display = "none";
+                }
+            }
+            }
+
+            // Initialize the dropdown to be hidden by default
+            window.onload = function() {
+            dropdownContent.classList.remove("show");
+            }
+        </script>
+    </body>
+</html>

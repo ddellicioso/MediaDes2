@@ -1,3 +1,123 @@
 body {
-    background-color: aquamarine;
+    background-color: #FFF2EB;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+.toko {
+    width: 80%;
+}
+
+.deco-door {
+    position: absolute;
+    top: 25%;
+    left: 57.5%;
+    z-index: 2;
+    width: 20%;
+}
+
+.door {
+    position: absolute;
+    top: 45%;
+    left: 58.5%;
+    z-index: 1;
+    width: 18%;
+}
+
+.door:hover {
+    opacity: 0;
+}
+
+.door-open {
+    position: absolute;
+    z-index: 0;
+    top: 45%;
+    left: 58.5%;
+    width: 18%;
+}
+
+.stairs {
+    position: absolute;
+    top: 81.5%;
+    left: 56.5%;
+    z-index: 1;
+    width: 22%;
+}
+
+.shelfs {
+    position: absolute;
+    top: 55%;
+    left: 30%;
+    z-index: -3;
+    width: 20%;
+}
+
+.curtain-left {
+    position: absolute;
+    top: 60%;
+    left: 33%;
+    width: 20%;
+    transform: translate(-50%, -50%);
+    z-index: -2;
+    animation: moveDoorLeft 2s forwards;
+}
+
+@keyframes moveDoorLeft {
+    from {
+        left: 33%;
+    }
+    to {
+        left: 26%;
+    }
+}
+
+.curtain-right {
+    position: absolute;
+    top: 60%;
+    left: 47%;
+    width: 20%;
+    transform: translate(-50%, -50%);
+    z-index: -2;
+    animation: moveDoorRight 2s forwards;
+}
+
+@keyframes moveDoorRight {
+    from {
+        left: 47%;
+    }
+    to {
+        left: 55%;
+    }
+}
+
+.open-sign {
+    position: absolute;
+    top: 55%;
+    left: 63%;
+    z-index: 2;
+    width: 8%;
+    transform: rotate(-deg) translateX(1px) translateY(-1px);
+    animation: moveSign 1.5s infinite alternate;
+}
+
+@keyframes moveSign {
+    0% {
+        transform: rotate(25deg) translateX(1px) translateY(-1px);
+    }
+    100% {
+        transform: rotate(-25deg) translateX(1px) translateY(-1px);
+    }
+}
+
+.door:hover .open-sign {
+    opacity: 0;
 }

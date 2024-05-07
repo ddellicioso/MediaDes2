@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/LO_content.css">
+        <script src="script.js"></script>
+        <title>Branding - LO1</title>
+    </head>
+    <body>
+        <nav>
+            <a href="patisserie.html" class="homelogo">
+                <img src="./images/Asset 5.png" class="homelogo"> 
+              </a>
+        
+              <div class="dropdown">
+                <button onclick="toggleMenu()" class="dropbtn">☰</button>
+                <div id="dropdownContent" class="dropdown-content">
+                  <input type="text" class="input" id="mySearch" onkeyup="filterMenu()" placeholder="Search..." title="Type in a category">
+                  <ul id="myMenu">
+                    <li><a href="#">Learning Outcomes</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Abouts</a></li>
+                  </ul>
+                </div>
+              </div>             
+        </nav>
+        <main>
+            <div class="main-container">
+                <header>Project Branding</header>
+                <div class="carousel-container">
+                    <div class="carousel">
+                      <div class="carousel-item"><img src="./images/Screenshot 2024-03-28 164154.png" alt="Image 1"></div>
+                      <div class="carousel-item"><img src="./images/Asset 15.png" alt="Image 2"></div>
+                      <div class="carousel-item"><img src="./images/logo def purple brandmark.png" alt="Image 3"></div>
+                      <div class="carousel-item"><img src="./images/Screenshot 2024-03-28 165254.png" alt="Image 4" style="width: 30%;"></div>
+                    </div>
+                    <button class="prev" onclick="moveCarousel(-1)">❮</button>
+                    <button class="next" onclick="moveCarousel(1)">❯</button>
+                </div>
+                <br>
+
+                <h3>Ingredients</h3>
+                <div class="ingredients">
+                    <div class="apps">
+                        <img src="./images/eggs.png">
+                        <img src="./images/eggs.png">
+                        <img src="./images/eggs.png">    
+                    </div>
+
+                    <aside>
+                        loremk fdhsajkfnda  dsafhsjaknds fdnashbfjafdyuqhdfuhf
+                    </aside>
+                </div>
+
+                
+            </div>
+
+            <div class="secondary-container">
+                <div class="Feedback">
+                    <header>Feedback</header> <br>
+                    <section>lorem ipsuuuuuuuuuummmmmmmm</section>
+                </div>
+
+                <div class="Reflection">
+                    <header>Reflection</header> <br>
+                    <section>lorem ipsuuuuuuuuuummmmmmmm</section>
+                </div>
+            </div>
+        </main>
+
+        <script>
+            let currentIndex = 0;
+
+            function moveCarousel(direction) {
+            const carousel = document.querySelector('.carousel');
+            const carouselWidth = carousel.clientWidth;
+            const numItems = carousel.children.length;
+
+            currentIndex = (currentIndex + direction + numItems) % numItems;
+            const offset = -currentIndex * carouselWidth;
+
+            carousel.style.transform = `translateX(${offset}px)`;
+            }
+
+
+
+            const dropdownContent = document.getElementById("dropdownContent");
+
+            function toggleMenu() {
+            dropdownContent.classList.toggle("show");
+            }
+
+            function filterMenu() {
+            const input = document.getElementById("mySearch");
+            const filter = input.value.toUpperCase();
+            const ul = document.getElementById("myMenu");
+            const li = ul.getElementsByTagName("li");
+
+            for (let i = 0; i < li.length; i++) {
+                const a = li[i].getElementsByTagName("a")[0];
+                const txtValue = a.textContent || a.innerText; // Handle potential textContent issues
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+                } else {
+                li[i].style.display = "none";
+                }
+            }
+            }
+
+            // Initialize the dropdown to be hidden by default
+            window.onload = function() {
+            dropdownContent.classList.remove("show");
+            }
+        </script>
+    </body>
+</html>

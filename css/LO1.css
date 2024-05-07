@@ -14,13 +14,13 @@ body {
     background: var(--1st-color);
 }
 
-.title {
+header{
     display: flex;
     background-color: var(--2nd-color);
     position: absolute;
     width: 20%;
     top: 5%;
-    left: 40%;
+    left: 39%;
     padding: 10px;
     border-radius: 10px;
     font-size: 1.2vw;
@@ -28,82 +28,112 @@ body {
     justify-content: center;
 }
 
-/*navigation*/
+a:link, a:visited {
+    text-decoration: none;
+    color: black;
+}
 
-    nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        color: black;
-        padding: 10px 20px;
-        z-index: -1;
-    }
-
-    nav ul {
-        color: black;
-        text-decoration: none;
-        padding: 10px; 
-    }
-
-    .homelogo {
-        display: flex;
-        position: absolute;
-        top: 5%;
-    }
-
-    .dropbtn {
-        background-color: pink;
-        color: rgb(0, 0, 0);
-        padding: 16px;
-        font-size: 16px;
-        border: none;
-        cursor: pointer;
-    }
-
-    .input {
-    padding: 10px;
-    }
-
-    .dropbtn:hover, .dropbtn:focus, .dropbtn:active {
-    background-color: #f18ea4;
-    }
-
-    .dropdown {
-        display: flex;
-        position: absolute;
-        left: 95%;
-        top: 5%;
-    }
-
-    .dropdown-content.show {
-        display: block;
-    }
-
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #f1f1f1;
-        min-width: 160px;
-        overflow: auto;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-        right: 100%;
-        top: 0;
-    }
-
-    .dropdown-content a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-    }
+a:hover {
+    color: #9c243e;
+}
 
 
-    .dropdown a:hover {
-        background-color: #ddd;
-        padding: 10px;
-    }
+/* nvaigation*/
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    padding: 10px 20px;
+    /* z-index: 1; */
+}
+
+nav ul {
+    color: black;
+    list-style-type: none;
+    padding: 10px; 
+}
+
+.homelogo {
+    display: flex;
+    position: absolute;
+    top: 5%;
+    z-index: 3;
+    width: 20%;
+}
+
+.dropbtn {
+    background-color: pink;
+    color: rgb(0, 0, 0);
+    padding: 1em;
+    font-size: 1vw;
+    border: none;
+    cursor: pointer;
+}
+
+.input {
+padding: 10px;
+}
+
+.dropbtn:hover, .dropbtn:focus, .dropbtn:active {
+background-color: #f18ea4;
+}
+
+.dropdown {
+    display: flex;
+    position: absolute;
+    left: 95%;
+    top: 5%;
+    z-index: 3;
+}
+
+.dropdown-content.show {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 8rem;
+    max-height: 20rem;
+    overflow: scroll;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 100%;
+    top: 0;
+    width: 10%;
+}
+
+.dropdown-content a {
+    font-size: 1vw;
+    color: black;
+    padding: 0.6rem ;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.search-wrapper {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.search-wrapper input {
+    font-size: 1vw;
+    width: 80%;
+}
+
+.submenu {
+    list-style-type: none;
+}
+
 
 /*container*/
 .container {
@@ -114,7 +144,6 @@ body {
     width: 50%;
     top: 25%;
     left: 25%;
-    margin-bottom: 100px;
 }
 
 .container img{
@@ -127,9 +156,10 @@ body {
     position: relative;
     background-color: var(--3rd-color);
     border-radius: 10px;
-    margin: 10px;
+    margin: 1rem;
     text-decoration: none;
     color: black;
+    padding: 1rem;
 }
 
 
@@ -150,7 +180,7 @@ body {
 }
 
 .eggs:hover, .flour:hover, .sugar:hover{
-    transition: all 0.3s ease-in-out; /* Smooth transition effect */
+    transition: all 0.4s ease-in-out; /* Smooth transition effect */
     transform: scale(1.1); /* Expand to 110% size on hover */
     background-color: var(--4th-color);
 }
