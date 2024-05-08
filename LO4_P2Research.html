@@ -4,7 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/LO_content.css">
         <script src="script.js"></script>
-        <title>Portfolio - LO1</title>
+        <title>Media Campaign - LO2</title>
     </head>
     <body>
         <nav>
@@ -47,33 +47,30 @@
         </nav>
         <main>
             <div class="main-container">
-                <header style="width: 30%;">Portfolio</header><br>
+                <header style="width: 50%;">Project 2: Research & Survey</header><br>
                 <div class="carousel-container" >
                     <div class="carousel">
                         <div class="carousel-item">
                             <div class="numbertext">1/4 <br>
-                                <img src="./images/Screenshot 2024-03-11 205107.png" alt="feedpulse" >
-                                <p>First of all I used Figma to implement my ideas and i directly tested them out on the teachers (5 teachers) to know if they has any problem with my layouts, colors, etc. 
-                                </p>
+                            <img src="./images/Screenshot 2024-05-03 191054.png" alt="feedpulse" >
                             </div>    
                         </div>
 
                         <div class="carousel-item">
                             <div class="numbertext">2/4 <br>
-                                <img src="./images/IMG_1842.PNG" alt="Notion">
-                                <p>My first idea was to hand drawn the elements but then i realized that it will be too much of a hassle and so i decided to use Adobe Illustrator (next page).</p>
+                            <img src="./images/Screenshot 2024-05-03 191115.png" alt="Notion">
                             </div>        
                         </div>
 
                         <div class="carousel-item">
                             <div class="numbertext">3/4 <br>
-                            <img src="./images/IMG_1859.PNG" alt="Notion">
+                            <img src="./images/Screenshot 2024-05-03 191408.png" alt="Notion">
                             </div>        
                         </div>
 
                         <div class="carousel-item">
                             <div class="numbertext">4/4 <br>
-                            <img src="./images/patisserie.png" alt="Notion">
+                            <img src="./images/Screenshot 2024-05-03 191324.png" alt="Notion">
                             </div>        
                         </div>
                     
@@ -87,20 +84,35 @@
 
                 
                 <div class="Description">
-                    <!-- <div class="desc-text">
+                    <div class="desc-text">
                         <h3>Description</h3>
-                        <p>Trying different techniques for the portfolio, prototypes</p>    
-                    </div> -->
+                        <p>How we as a group organize our files, split our tasks, and documenting them</p>    
+                    </div>
                     
                     <aside>
                         <h3>Links</h3>
-                        <a href="https://www.figma.com/file/Lrn9pBiNfpGMuepb7oTMVH/Untitled?type=design&mode=design&t=I6EUKPumNbcLNjus-1">Figma Prototype</a>
-                        <!-- <a href="">Conclusion of the Survey</a> -->
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSciJvWXgs9yKNdne9Z4dV0BL61NNyc1-BhJ2YbgYK8qYsiikg/viewform?usp=sharing">General Students Survey</a>
+                        <a href="https://docs.google.com/document/d/1MrFpvtj9d8XxchHnxKVeZdObQnAsqS5LJxZBEJ18JgA/edit?usp=sharing">Conclusion of the Survey</a>
                         <!-- <a href="">Success Video</a> -->
                     </aside>
                 </div>
 
                 
+            </div>
+
+            <div class="secondary-container">
+                <div class="Feedback">
+                    <header>Feedback</header> <br>
+                    <section>-</section>
+                </div>
+
+                <div class="Reflection">
+                    <header>Reflection</header> <br>
+                    <section>We used Micrososft Teams as a place for documenting our files (and everyone can access it), planner to assign members, and Whatsapp group for texting. <br><br>
+                    We made several surveys to understand our stakeholders and asked them their opinions on many things; me and one teammate made a survey specifically for general students in ICT (except software because we have software students survey). <br><br>
+                    We also made an interview with an actual alumni as an example of our idea for the project (video is still in editing).
+                    </section>
+                </div>
             </div>
         </main>
 
@@ -108,14 +120,14 @@
             let currentIndex = 0;
 
             function moveCarousel(direction) {
-                const carousel = document.querySelector('.carousel');
-                const carouselWidth = carousel.clientWidth;
-                const numItems = carousel.children.length;
+            const carousel = document.querySelector('.carousel');
+            const carouselWidth = carousel.clientWidth;
+            const numItems = carousel.children.length;
 
-                currentIndex = (currentIndex + direction + numItems) % numItems;
-                const offset = -currentIndex * carouselWidth;
+            currentIndex = (currentIndex + direction + numItems) % numItems;
+            const offset = -currentIndex * carouselWidth;
 
-                carousel.style.transform = `translateX(${offset}px)`;
+            carousel.style.transform = `translateX(${offset}px)`;
             }
 
 
