@@ -136,10 +136,10 @@ body {
         width: 50%;
         transform: translate(-50%, -50%);
         z-index: 2;
-        animation: moveDoorLeft 3.5s forwards;
+        animation: moveCurtainLeft 3.5s forwards;
     }
     
-    @keyframes moveDoorLeft {
+    @keyframes moveCurtainLeft {
         from {
             left: 25%;
         }
@@ -154,10 +154,10 @@ body {
         width: 50%;
         transform: translate(-50%, -50%);
         z-index: 2;
-        animation: moveDoorRight 3.5s forwards;
+        animation: moveCurtainRight 3.5s forwards;
     }
     
-    @keyframes moveDoorRight {
+    @keyframes moveCurtainRight {
         from {
             left: 80%;
         }

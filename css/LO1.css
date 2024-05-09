@@ -17,15 +17,19 @@ body {
 header{
     display: flex;
     background-color: var(--2nd-color);
-    position: absolute;
+    position: relative;
+    flex-direction: column;
     width: 20%;
     top: 5%;
     left: 39%;
     padding: 10px;
     border-radius: 10px;
-    font-size: 1.2vw;
+    font-size: 1.5vw;
     align-items: center;
-    justify-content: center;
+}
+
+header p{
+    font-size: 1.2vw;
 }
 
 a:link, a:visited {
@@ -36,6 +40,19 @@ a:link, a:visited {
 a:hover {
     color: #9c243e;
 }
+
+/* .sub-header p {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    background-color:#d7a0bd;
+    padding: 2%;
+    font-size: 1.2vw;
+    width: 20%;
+    top: 10%;
+    left: 39%;
+    border-radius: 10px;
+} */
 
 
 /* nvaigation*/
@@ -142,7 +159,7 @@ background-color: #f18ea4;
     position: relative;
     align-items: center;
     width: 50%;
-    top: 25%;
+    top: 15%;
     left: 25%;
 }
 
@@ -159,14 +176,15 @@ background-color: #f18ea4;
     margin: 1rem;
     text-decoration: none;
     color: black;
-    padding: 1rem;
+    width: 60%;
+    padding: 2rem;
 }
 
 
 .judul {
     display: flex;
     position: absolute;
-    top: 30%;
+    top: 25%;
     left: 40%;
     font-size: 1.5vw;    
 }
