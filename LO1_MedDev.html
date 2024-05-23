@@ -1,0 +1,156 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/LO_content.css">
+        <script src="script.js"></script>
+        <title>Branding - LO1</title>
+    </head>
+    <body>
+        <nav>
+            <a href="patisserie.html" class="homelogo">
+                <img src="./images/Asset 5.png" class="homelogo"> 
+              </a>
+        
+            <div class="dropdown">
+                <button onclick="toggleMenu()" class="dropbtn"> ☰ </button>
+                <div id="dropdownContent" class="dropdown-content">
+                    <div class="search-wrapper"> 
+                        <input type="text" class="input" id="mySearch" onkeyup="filterMenu()" placeholder="Search..." title="Type in a category">
+                    </div>
+                    <ul id="myMenu">
+                        <li class="has-submenu">
+                            <div>
+                                <a href="LO_room.html">Learning Outcomes</a>
+                                <ul class="submenu">
+                                    <li><a href="LO1.html">LO 1</a></li>
+                                    <li><a href="LO2.html">LO 2</a></li>
+                                    <li><a href="LO3.html">LO 3</a></li>
+                                    <li><a href="LO4.html">LO 4</a></li>
+                                    <li><a href="LO5.html">LO 5</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- <li class="has-submenu">
+                            <div>
+                                <a href="#">Projects</a>
+                                <ul class="submenu">
+                                    <li><a href="#">Submenu Item 1</a></li>
+                                    <li><a href="#">Submenu Item 2</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">Abouts</a></li> -->
+                    </ul>
+                </div>
+            </div>              
+        </nav>
+        <main>
+            <div class="main-container">
+                <header>
+                    Project Media Development
+                </header>
+                <section>
+                    <h3>Description</h3>
+                    <p>
+                        We already made a figma prototype from the previous project (I wasn't in the prototype team) so we just extracted what we liked and agreed on. After that we made a new <a href="https://www.figma.com/design/AAM85eXIAgtEA4kjhAMUHJ/Development?node-id=0%3A1&t=nP8XJS3uuH3CIGbR-1" target="_blank">Figma prototype</a>  to have a general idea and themes/colors to match Fontys' brandguide. The next step is to make a user *put a link* research survey or A/B Testing focused on our target audience (Dutch teenagers) to see which designs or contents they like/want to see more. 
+                    </p>
+
+                    <div class="did">
+                        <h3>What I Did</h3>
+
+                        <div class="did_content">
+                            <p>
+                                My part is to make the profile page (Media Design). In the survey, I asked the respondents to pick which design and colors they like the most as well as asking them about how they think the content should be arranged like. <br><br>
+                                I made several iterations on the page (ver1 is what we (our team) like, ver2 what teachers think should be, ver3/final is the modified version according to the answers of our target audience) *more detailed explanation in LO**. 
+
+                            </p>
+
+                            <aside>
+                                <img src="./images/Screenshot 2024-05-23 195222.png">
+                                <figcaption>Ver 1, Ver 2, Final Ver respectively</figcaption>
+                            </aside>
+                        </div>
+
+                        <h4>Feedback</h4>
+                        <div class="did_content">
+                            <p>
+                                We came to Jan to ask for some feedback for the prototype (Ver 1) and he said that we should shorten the length of our pages to reduce the time of user scrolling. <br>
+                                The other thing is that he feels that the contact us section (in Ver 1) is too out of place and overall is just not a good color for the page. He also thinks that the pink header (we showed him the landing page as well) is nice and it fits the brandguide and the theme. 
+                            </p>
+
+                            <aside>
+
+                            </aside>
+                        </div>
+
+                        <h4>Iteration 1</h4>
+                        <div class="did_content">
+                            <p>
+                                After Jan's feedback I directly changed the things he mentioned such as, the header and the contact section. I also took away the additional section to shorten the page a little bit and I think it's not really important to put it in the profile page.
+                            </p>
+
+                            <aside>
+                                <img src="./images/Screenshot 2024-05-23 195222 copy.png">
+                                <figcaption>Version 1 VS Version 2</figcaption>
+                            </aside>
+                        </div>
+
+                        <h4>Iteration 2</h4>
+                        <div class="did_content">
+                            <p>
+                                After we got answers from our survey, I compiled everything and fix whatever is needed. I fixed the arrangement of the content, I changed the designs of the buttons and the job opportunity. I also separated the example project from the semester planning.
+                            </p>
+                            <aside>
+                                <img src="./images/Screenshot 2024-05-23 195222 copy2.png">
+                                <figcaption>Version 2 VS Final Version</figcaption>
+                            </aside>
+                        </div>
+                        
+                    </div>
+
+                    <h3>Reflection</h3>
+                    <p>
+                        Overall I feel like I did a quite goodjob because I took an account for every feedbacks that I received into my product and I'm really satisfied and happy with end product :D
+                    </p>
+
+                    <!-- <h4>Links</h4>
+                    <div class="links">
+                        <a href="#">#</a>
+                    </div> -->
+                </section>
+                
+            </div>
+        </main>
+        <script>
+
+            const dropdownContent = document.getElementById("dropdownContent");
+
+            function toggleMenu() {
+            dropdownContent.classList.toggle("show");
+            }
+
+            function filterMenu() {
+            const input = document.getElementById("mySearch");
+            const filter = input.value.toUpperCase();
+            const ul = document.getElementById("myMenu");
+            const li = ul.getElementsByTagName("li");
+
+            for (let i = 0; i < li.length; i++) {
+                const a = li[i].getElementsByTagName("a")[0];
+                const txtValue = a.textContent || a.innerText; // Handle potential textContent issues
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+                } else {
+                li[i].style.display = "none";
+                }
+            }
+            }
+
+            // Initialize the dropdown to be hidden by default
+            window.onload = function() {
+            dropdownContent.classList.remove("show");
+            }
+        </script>
+    </body>
+</html>
