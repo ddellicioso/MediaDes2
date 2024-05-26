@@ -11,100 +11,103 @@ body {
 }
 
 /* nvaigation*/
-    nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        color: black;
-        padding: 10px 20px;
-        /* z-index: 1; */
-    }
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    padding: 10px 20px;
+    z-index: 10;
+    top: 5%;
+}
 
-    nav ul {
-        color: black;
-        list-style-type: none;
-        padding: 10px; 
-    }
+nav ul {
+    color: black;
+    list-style-type: none;
+    padding: 10px; 
+}
 
-    .homelogo {
-        display: flex;
-        position: absolute;
-        top: 5%;
-        z-index: 3;
-        width: 20%;
-    }
+.homelogo {
+    display: flex;
+    position: absolute;
+    top: 5%;
+    z-index: 3;
+    width: 20%;
+    z-index: 4;
+}
 
-    .dropbtn {
-        background-color: pink;
-        color: rgb(0, 0, 0);
-        padding: 1em;
-        font-size: 1vw;
-        border: none;
-        cursor: pointer;
-    }
+.dropbtn {
+    background-color: pink;
+    color: rgb(0, 0, 0);
+    padding: 1em;
+    font-size: 1vw;
+    border: none;
+    cursor: pointer;
+}
 
-    .input {
-    padding: 10px;
-    }
+.input {
+padding: 10px;
+}
 
-    .dropbtn:hover, .dropbtn:focus, .dropbtn:active {
-    background-color: #f18ea4;
-    }
-    
-    .dropdown {
-        display: flex;
-        position: absolute;
-        left: 95%;
-        top: 5%;
-        z-index: 3;
-    }
+.dropbtn:hover, .dropbtn:focus, .dropbtn:active {
+background-color: #f18ea4;
+}
 
-    .dropdown-content.show {
-        display: block;
-    }
-    
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #f1f1f1;
-        min-width: 8rem;
-        max-height: 20rem;
-        overflow: scroll;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-        right: 100%;
-        top: 0;
-        width: 10%;
-    }
-    
-    .dropdown-content a {
-        font-size: 1vw;
-        color: black;
-        padding: 0.6rem ;
-        text-decoration: none;
-        display: block;
-    }
-    
-    
-    .dropdown a:hover {
-        background-color: #ddd;
-    }
+.dropdown {
+    display: flex;
+    position: absolute;
+    left: 95%;
+    top: 5%;
+    z-index: 3;
+}
 
-    .search-wrapper {
-        position: sticky;
-        top: 0;
-        z-index: 1;
-    }
+.dropdown-content.show {
+    display: block;
+}
 
-    .search-wrapper input {
-        font-size: 1vw;
-        width: 80%;
-    }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 15rem;
+    max-height: 20rem;
+    overflow: scroll;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 100%;
+    top: 0;
+    width: 10%;
+}
 
-    .submenu {
-        list-style-type: none;
-    }
+.dropdown-content a {
+    font-size: 1vw;
+    color: black;
+    padding: 0.6rem ;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.search-wrapper {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.search-wrapper input {
+    font-size: 1vw;
+    width: 80%;
+}
+
+.submenu {
+    list-style-type: none;
+}
+
 
   
 /* learning outcome page */
