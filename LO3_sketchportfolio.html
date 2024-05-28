@@ -3,6 +3,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/LO_content.css">
+        <script src="script.js"></script>
         <title>Branding - LO1</title>
     </head>
     <body>
@@ -11,188 +12,80 @@
                 <img src="./images/Asset 5.png" class="homelogo"> 
               </a>
         
-              <div class="dropdown">
+            <div class="dropdown">
                 <button onclick="toggleMenu()" class="dropbtn"> ☰ </button>
                 <div id="dropdownContent" class="dropdown-content">
-                  <div class="search-wrapper"> 
-                    <input type="text" class="input" id="mySearch" onkeyup="filterMenu()" placeholder="Search..." title="Type in a category">
-                  </div>
-                  <ul id="myMenu">
-                    <li class="has-submenu">
-                      <div>
-                        <a href="LO_room.html">Learning Outcomes</a>
-                        <ul class="submenu">
-                          <li><a href="LO1.html">LO 1</a></li>
-                          <li><a href="LO2.html">LO 2</a></li>
-                          <li><a href="LO3.html">LO 3</a></li>
-                          <li><a href="LO4.html">LO 4</a></li>
-                          <li><a href="LO5.html">LO 5</a></li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li class="has-submenu">
-                      <div>
-                        <a href="#">Projects</a>
-                        <ul class="submenu">
-                          <li><a href="#">Submenu Item 1</a></li>
-                          <li><a href="#">Submenu Item 2</a></li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li><a href="#">Abouts</a></li>
-                  </ul>
+                    <div class="search-wrapper"> 
+                        <input type="text" class="input" id="mySearch" onkeyup="filterMenu()" placeholder="Search..." title="Type in a category">
+                    </div>
+                    <ul id="myMenu">
+                        <li class="has-submenu">
+                            <div>
+                                <a href="LO_room.html">Learning Outcomes</a>
+                                <ul class="submenu">
+                                    <li><a href="LO1.html">LO 1</a></li>
+                                    <li><a href="LO2.html">LO 2</a></li>
+                                    <li><a href="LO3.html">LO 3</a></li>
+                                    <li><a href="LO4.html">LO 4</a></li>
+                                    <li><a href="LO5.html">LO 5</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-              </div>           
+            </div>              
         </nav>
         <main>
-            <!-- portfolio content -->
             <div class="main-container">
-                <header style="width: 30%;">Sketch Portfolio</header><br>
-                <div class="carousel-container">
-                    <div class="carousel">
-                         <div class="carousel-item">
-                            <div class="numbertext">1/11
-                            <img src="./images/IMG_1858.PNG" alt="sketch LO">
-                            </div>    
+                <header>
+                    Sketch Portfolio
+                </header>
+                <section>
+                    <h3>Description</h3>
+                    <p>
+                        I developed a <span class="highlight">patisserie concept</span> with the primary color being my favorite, <span class="highlight">pink</span>. Initially, I sketched my ideas on <span class="highlight">Procreate</span> and sought feedback right away. I used <span class="highlight">Illustrator</span> to create the elements and graphics, and planned to use <span class="highlight">Adobe XD</span> for upcoming prototypes.
+                    </p>
+
+                    <div class="did">
+                        <h3>What I Did</h3>
+
+                        <div class="did_content">
+                            <p>
+                                I started by sketching my ideas in Procreate, then created the design elements and graphics in Illustrator. To refine my concept, I used feedback from teachers and iterated on my design. For the prototype, I planned to use Adobe XD to bring everything together. Based on feedback, I devised the <span class="highlight">recipe book</span> idea, which <span class="highlight">redirects</span>  users to another page when they click on the learning outcome button, ensuring a clear layout for easy reading.
+                            </p>
+
+                            <aside>
+
+                            </aside>
                         </div>
 
-                         <div class="carousel-item">
-                            <div class="numbertext">2/11
-                            <img src="./images/IMG_1856.PNG" alt="sketch Project">
-                            </div>        
-                        </div>
-                    
-                        <div class="carousel-item">
-                            <div class="numbertext"> 3/11
-                            <img src="./images/IMG_1855.PNG" alt="Sketch About">
-                            </div>
+                        <h4>Feedback</h4>
+                        <div class="did_content">
+                            <p>
+
+                            </p>
+
+                            <aside>
+
+                            </aside>
                         </div>
                         
-                        <div class="carousel-item">
-                            <div class="numbertext"> 4/11
-                            <img src="./images/IMG_1857.PNG" alt="Sketch Content 1">
-                            </div>
-                        </div>
-
-                        <div class="carousel-item">
-                            <div class="numbertext"> 5/11
-                            <img src="./images/IMG_1854.PNG" alt="Sketch Content 2">
-                            </div>
-                        </div>
-
-                        <div class="carousel-item">
-                            <div class="numbertext"> 6/11
-                            <img src="./images/IMG_1852.PNG" alt="Sketch Content 3">
-                            </div>
-                        </div>
-
-                        <div class="carousel-item">
-                            <div class="numbertext"> 7/11
-                            <img src="./images/Screenshot 2024-04-04 144713.png" alt="Figma LO">
-                            </div>
-                        </div>
-
-                        <div class="carousel-item">
-                            <div class="numbertext"> 8/11
-                            <img src="./images/Screenshot 2024-04-04 144721.png" alt="Figma Project">
-                            </div>
-                        </div>
-
-                        <div class="carousel-item">
-                            <div class="numbertext"> 9/11
-                            <img src="./images/Screenshot 2024-04-04 144727.png" alt="Figma About">
-                            </div>
-                        </div>
-
-                        <div class="carousel-item">
-                            <div class="numbertext"> 10/11 <br>
-                            <img src="./images/Yukako Ohde's illustration Gallery.jpeg" alt="Inspiration 1" style="width:50%;">
-                            </div>
-                        </div>
-
-                        <div class="carousel-item">
-                            <div class="numbertext"> 11/11 <br>
-                            <img src="./images/台灣常識集：台灣傳統美食篇.jpeg" alt="Inspiration 2" style="width: 40%;">
-                            </div>
-                        </div>
                     </div>
-                      
-                    
-                    <button class="prev" onclick="moveCarousel(-1)">❮</button>
-                    <button class="next" onclick="moveCarousel(1)">❯</button>
-                </div>
-                <br>
 
+                    <h3>Reflection</h3>
+                    <p>
+
+                    </p>
+
+                    <h4>Links</h4>
+                    <div class="links">
+                        <a href="#">#</a>
+                    </div>
+                </section>
                 
-                <div class="Description">
-                    <aside>
-                        <h3>Links</h3>
-                        <div class="links">
-                            <a href="https://www.figma.com/file/3z0bGcvRpUufXUoCoOSQ6C/GMC_web?type=design&mode=design&t=tYouZLJ9e0XiLC8x-1">Figma Prototype</a>
-                            <a href="https://pin.it/6hspgpyju">Content first sketch inspiration</a>
-                            <a href="https://pin.it/3kP5EtzGN">Content final sketch inspiration</a>   
-                        </div>
-                        
-                    </aside>
-                </div>
-
-                
-            </div>
-
-            <div class="secondary-container">
-                <div class="Feedback">
-                    <header>Feedback</header> <br>
-                    <section>
-                        <h3>Feedback 1 — </h3>
-                        <p>Maikel said making my website 3D for now would be too hard for my skills, instead he told me to use layering technique.
-                            He also suggested to start making color scheme, storyboard, etc.
-                        </p>
-                        <h3>Feedback 2 — </h3>
-                        <p>Anke told me to not use the a pop-up notification (page 4) for the contents because it'll make the pop-up too long and it'll be inconvenient.    
-                        </p>
-                    </section>
-                </div>
-
-                <div class="Reflection">
-                    <header>Reflection</header> <br>
-                    <section>
-                        <p>
-                        I came up with a patisserie concept(it was supposed to be 3d) with the main color of my favorite color, pink.
-                         First of all i skecthed my ideas on Procreate and i immediately asked for feedback.
-                        I use Illustrator to make the elements and graphics, and are planning to use adobe XD
-                         for upcoming prototype(s).
-                        </p>
-                        
-                        <h3>Solution/Iteration 1 — </h3>
-                        <p>I came up with the "recipe book" idea (page 5) and it will directs you to other page which is the recipe if you click on the learning outcome button, and Anke told me to make sure that the layout is clear for teacher to read.</p>
-
-                        <h3>Iteration 2 — </h3>
-                        <p>I realized that it would take so much time if i want to use the recipe book idea for the contents because it doesn't have a template that i could copy-paste,
-                            so i came up another one and i mentioned it on my first portfolio review, Pim and Chris agreed that it would be better for teachers to look at my content.
-                        </p>
-                    </section>
-                </div>
             </div>
         </main>
-
-
-
-
         <script>
-            let currentIndex = 0;
-
-            function moveCarousel(direction) {
-            const carousel = document.querySelector('.carousel');
-            const carouselWidth = carousel.clientWidth;
-            const numItems = carousel.children.length;
-
-            currentIndex = (currentIndex + direction + numItems) % numItems;
-            const offset = -currentIndex * carouselWidth;
-
-            carousel.style.transform = `translateX(${offset}px)`;
-            }
-
-            /*naavigation*/
 
             const dropdownContent = document.getElementById("dropdownContent");
 

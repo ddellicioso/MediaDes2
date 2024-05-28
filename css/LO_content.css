@@ -166,6 +166,7 @@ p a{
 }
 
 .links {
+
     display: flex;
     flex-direction: row;
 
@@ -250,6 +251,10 @@ figcaption {
 
 #kegedean img:hover{
     transform: none;
+}
+
+#kegedean figcaption{
+    font-size: 1.2em;
 }
 
 .validate {

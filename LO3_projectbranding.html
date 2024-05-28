@@ -3,6 +3,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/LO_content.css">
+        <script src="script.js"></script>
         <title>Branding - LO1</title>
     </head>
     <body>
@@ -11,179 +12,83 @@
                 <img src="./images/Asset 5.png" class="homelogo"> 
               </a>
         
-              <div class="dropdown">
+            <div class="dropdown">
                 <button onclick="toggleMenu()" class="dropbtn"> ☰ </button>
                 <div id="dropdownContent" class="dropdown-content">
-                  <div class="search-wrapper"> 
-                    <input type="text" class="input" id="mySearch" onkeyup="filterMenu()" placeholder="Search..." title="Type in a category">
-                  </div>
-                  <ul id="myMenu">
-                    <li class="has-submenu">
-                      <div>
-                        <a href="LO_room.html">Learning Outcomes</a>
-                        <ul class="submenu">
-                          <li><a href="LO1.html">LO 1</a></li>
-                          <li><a href="LO2.html">LO 2</a></li>
-                          <li><a href="LO3.html">LO 3</a></li>
-                          <li><a href="LO4.html">LO 4</a></li>
-                          <li><a href="LO5.html">LO 5</a></li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li class="has-submenu">
-                      <div>
-                        <a href="#">Projects</a>
-                        <ul class="submenu">
-                          <li><a href="#">Submenu Item 1</a></li>
-                          <li><a href="#">Submenu Item 2</a></li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li><a href="#">Abouts</a></li>
-                  </ul>
+                    <div class="search-wrapper"> 
+                        <input type="text" class="input" id="mySearch" onkeyup="filterMenu()" placeholder="Search..." title="Type in a category">
+                    </div>
+                    <ul id="myMenu">
+                        <li class="has-submenu">
+                            <div>
+                                <a href="LO_room.html">Learning Outcomes</a>
+                                <ul class="submenu">
+                                    <li><a href="LO1.html">LO 1</a></li>
+                                    <li><a href="LO2.html">LO 2</a></li>
+                                    <li><a href="LO3.html">LO 3</a></li>
+                                    <li><a href="LO4.html">LO 4</a></li>
+                                    <li><a href="LO5.html">LO 5</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-              </div>            
+            </div>              
         </nav>
         <main>
-            <!-- portfolio content -->
             <div class="main-container">
-                <header style="width: 30%;">Project Branding</header><br>
-                <div class="carousel-container">
-                    <div class="carousel">
-                         <div class="carousel-item">
-                            <div class="numbertext">1/6
-                            <img src="./images/Screenshot 2024-03-28 164154.png" alt="Figma prototype">
-                            </div>    
-                        </div>
+                <header>
+                    Project Branding Brandguide
+                </header>
+                <section>
+                    <h3>Description</h3>
+                    <p>
+                        We made a brandguide for the client and we tasked Sanne (one of our teammates) to make the <a href="./pdf/old_brandguide.pdf" target="_blank">first brandguide</a> . We put colors of the brand, some typography, rules of the logo, etc.
+                    </p>
 
-                         <div class="carousel-item">
-                            <div class="numbertext">2/6 <br>
-                            <img src="./images/old brandguide.png" alt="Old brandguide" style="width: 50%;">
-                            </div>        
-                        </div>
-                    
-                        <div class="carousel-item">
-                            <div class="numbertext"> 3/6 <br>
-                            <img src="./images/new brandguide.png" alt="New brandguide" style="width: 50%;">
-                            </div>
-                        </div>
-                        
-                        <div class="carousel-item">
-                            <div class="numbertext"> 4/6
-                            <img src="./images/IMG_1860.PNG" alt="Logo i made">
-                            </div>
-                        </div>
+                    <div class="did">
+                        <!-- <h3>What I Did</h3>
 
-                        <div class="carousel-item">
-                            <div class="numbertext"> 5/6
-                            <img src="./images/Screenshot 2024-02-27 130253.png" alt="initial color palete">
-                            </div>
-                        </div>
+                        <div class="did_content">
+                            <p>
+                               After we received the 
+                            </p>
 
-                        <div class="carousel-item">
-                            <div class="numbertext"> 6/6
-                            <img src="./images/Screenshot 2024-03-21 130838.png" alt="final color palete">
-                            </div>
-                        </div>
+                            <aside>
 
-                        <!-- <div class="carousel-item">
-                            <div class="numbertext"> 7/11
-                            <img src="./images/Screenshot 2024-04-04 144713.png" alt="Figma LO">
-                            </div>
+                            </aside>
                         </div> -->
 
-                        <!-- <div class="carousel-item">
-                            <div class="numbertext"> 8/11
-                            <img src="./images/Screenshot 2024-04-04 144721.png" alt="Figma Project">
-                            </div>
-                        </div> -->
-                    </div>
-                      
-                    
-                    <button class="prev" onclick="moveCarousel(-1)">❮</button>
-                    <button class="next" onclick="moveCarousel(1)">❯</button>
-                </div>
-                <br>
+                        <h4>Feedback 1 (on the 1st brandguide)</h4>
+                        <div class="feedback">
+                            <p>
 
-                
-                <div class="Description">
-                    <div class="desc-text">
-                        <h3>Description</h3>
-                        <p>Iterations I made during first project</p>    
-                    </div>
-                    
+                            </p>
 
-                    <aside>
-                        <h3>Links</h3>
-                        <div class="links">
-                            <a href="https://www.figma.com/file/Lrn9pBiNfpGMuepb7oTMVH/Untitled?type=design&node-id=0%3A1&mode=design&t=WlPDEi9LoHrCyApw-1">Figma Prototype</a>
-                            <a href="./pdf/brandguide_revised.pdf">Brandguide final</a>
-                            <a href="./pdf/old_brandguide.pdf">Brandguide initial</a>
-                            <a href="https://fonts.adobe.com/fonts/dazzle-unicase">Final fonts</a>
-                            <a href="https://fonts.google.com/specimen/Great+Vibes">Old fonts</a>    
+                            <aside id="kegedean">
+                                <img src="./images/new brandguide.png">
+                                <figcaption>Old vs New</figcaption>
+                           
                         </div>
-                        
-                    </aside>
-                </div>
 
+                        <h4>Iteration 1</h4>
+                        
+                    </div>
+
+                    <h3>Reflection</h3>
+                    <p>
+
+                    </p>
+
+                    <h4>Links</h4>
+                    <div class="links">
+                        <a href="#">#</a>
+                    </div>
+                </section>
                 
-            </div>
-
-            <div class="secondary-container">
-                <div class="Feedback">
-                    <header>Feedback</header> <br>
-                    <section>
-                        <h3>Feedback 1 — </h3>
-                        <p>
-                            From the first presentation, clients said they want us to change the heading fonts since they already used it and it looks old.
-                        </p>
-                        <h3>Feedback 2 — </h3>
-                        <p> On the final presentation the client expressed that they don't really like the agenda page since it feels old fashioned.
-                        </p>
-                        
-                    </section>
-                </div>
-
-                <div class="Reflection">
-                    <header>Reflection</header> <br>
-                    <section>
-                        <p>
-                            Me and my teammates decided to use Figma to make prototype for our ideas on the web design. 
-                            Unfortunately, we didn’t have enough time to ask around for feedbacks from teachers about this before the final presentation, so me personally regretted it. 
-                        </p>
-                        
-                        <h3>Solution/Iteration 1 — </h3>
-                        <p>
-                            Our team decided to use more modern and fun fonts as a heading fonts.
-                        </p>
-
-                        <h3>Iteration 2 — </h3>
-                        <p> I made the first color palete (now that i look at it, it looks so ugly(page 5)) and Sanne (my teammate) suggested another colors(page 6) and it looks way better so we decided to use that.<br>
-                            I also made a logo(page 4) for the project but i didn't feel confident with it so i didn't really ask for feedback.
-                        </p>
-                    </section>
-                </div>
             </div>
         </main>
-
-
-
-
         <script>
-            let currentIndex = 0;
-
-            function moveCarousel(direction) {
-            const carousel = document.querySelector('.carousel');
-            const carouselWidth = carousel.clientWidth;
-            const numItems = carousel.children.length;
-
-            currentIndex = (currentIndex + direction + numItems) % numItems;
-            const offset = -currentIndex * carouselWidth;
-
-            carousel.style.transform = `translateX(${offset}px)`;
-            }
-
-            /*naavigation*/
 
             const dropdownContent = document.getElementById("dropdownContent");
 
