@@ -113,12 +113,13 @@ background-color: #f18ea4;
 .search-wrapper {
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 2;
 }
 
 .search-wrapper input {
     font-size: 1vw;
     width: 100%;
+    z-index: 3;
 }
 
 .submenu {
@@ -257,6 +258,18 @@ figcaption {
     font-size: 1.2em;
 }
 
+#gabung {
+    margin: 1rem;
+    background-color: red;
+    width: 100%;
+}
+
+#gabung-pls {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+}
 .validate {
     margin-left: 2rem;
 }

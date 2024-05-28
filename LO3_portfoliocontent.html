@@ -3,7 +3,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/LO_content.css">
-        <title>LO3 - Portfolio Content</title>
+        <script src="script.js"></script>
+        <title>Portfolio Content - LO3</title>
     </head>
     <body>
         <nav>
@@ -15,121 +16,141 @@
                 <button onclick="toggleMenu()" class="dropbtn"> ☰ </button>
                 <div id="dropdownContent" class="dropdown-content">
                     <div class="search-wrapper"> 
-                    <input type="text" class="input" id="mySearch" onkeyup="filterMenu()" placeholder="Search..." title="Type in a category">
+                        <input type="text" class="input" id="mySearch" onkeyup="filterMenu()" placeholder="Search..." title="Type in a category">
                     </div>
                     <ul id="myMenu">
-                    <li class="has-submenu">
-                        <div>
-                        <a href="LO_room.html">Learning Outcomes</a>
-                        <ul class="submenu">
-                            <li><a href="LO1.html">LO 1</a></li>
-                            <li><a href="LO2.html">LO 2</a></li>
-                            <li><a href="LO3.html">LO 3</a></li>
-                            <li><a href="LO4.html">LO 4</a></li>
-                            <li><a href="LO5.html">LO 5</a></li>
-                        </ul>
-                        </div>
-                    </li>
-                    <li class="has-submenu">
-                        <div>
-                        <a href="#">Projects</a>
-                        <ul class="submenu">
-                            <li><a href="#">Submenu Item 1</a></li>
-                            <li><a href="#">Submenu Item 2</a></li>
-                        </ul>
-                        </div>
-                    </li>
-                    <li><a href="#">Abouts</a></li>
+                        <li class="has-submenu">
+                            <div>
+                                <a href="LO_room.html">Learning Outcomes</a>
+                                <ul class="submenu">
+                                    <li><a href="LO1.html">LO 1</a></li>
+                                    <li><a href="LO2.html">LO 2</a></li>
+                                    <li><a href="LO3.html">LO 3</a></li>
+                                    <li><a href="LO4.html">LO 4</a></li>
+                                    <li><a href="LO5.html">LO 5</a></li>
+                                </ul>
+                            </div>
+                        </li>
                     </ul>
                 </div>
-            </div>           
+            </div>              
         </nav>
         <main>
-            <!-- portfolio content -->
             <div class="main-container">
-                <header style="width: 30%;">Portfolio Content</header><br>
-                <div class="carousel-container">
-                    <div class="carousel">
-                        <div class="carousel-item">
-                            <div class="numbertext">1/
-                            <img src="./images/Screenshot 2024-04-15 133547.png" alt="Initial layout">
-                            </div>    
+                <header>
+                    Portfolio Content Iterations
+                </header>
+                <section>
+                    <h3>Description</h3>
+                    <p>
+                        I made some iterations regarding the content of my portfolio, since the first content wasn't clear enough for the teachers to read and grade me.
+                    </p>
+
+                    <div class="did">
+                        <h3>What I Did</h3>
+
+                        <div class="mboh">
+                            <p>
+                                After I found <span class="highlight">inspiration</span> on Pinterest about what the layout of the content would look like, I made the <span class="highlight">sketch</span> and implemented it in my portfolio. 
+                            </p>
+
+                            <aside id="gabung-pls">
+                                <div class="gabung">
+                                    <img src="./images/IMG_1852.PNG" style="width: 50%;">
+                                    <figcaption>New layout sketch</figcaption>
+                                </div>
+
+                                <div class="gabung">
+                                    <img src="./images/台灣常識集：台灣傳統美食篇.jpeg" style="width: 50%;">
+                                    <figcaption>Inspiration from Pinterest</figcaption>
+                                </div>
+                            </aside>
                         </div>
 
-                        <div class="carousel-item">
-                            <div class="numbertext">2/
-                            <img src="./images/Screenshot 2024-04-15 212410.png" alt="Iteration layout 1">
-                            </div>        
+                        <h4>Feedback 1</h4>
+                        <div class="feedback">
+                            <p>
+                                Chris came up to me and we discussed my portfolio and what to do to make it better:
+                                <ul>
+                                    <li><span class="highlight">Modify or replace</span> the image carousel, as teachers found it difficult to review the content</li>
+                                    <li>Provide more <span class="highlight">structure</span> and <span class="highlight">context</span> to the content for better readability</li>
+                                </ul>
+                            </p>
                         </div>
 
-                        <!-- <div class="carousel-item">
-                            <div class="numbertext">3/
-                            <img src="./images/IMG_1861.PNG" alt="Logos 1">
-                            </div>    
-                        </div> -->
+                        <h4>Iteration 1</h4>
+                        <div class="mboh">
+                            <p>
+                                I was very fond of the image carousel, so I decided to <span class="highlight">keep it but modify</span> how the learning outcomes were presented. I hoped this would resolve the issue of teachers having difficulty seeing the contents clearly.
+                            </p>
+
+                            <aside id="gabung-pls">
+                                <div class="gabung">
+                                    <img src="./images/Screenshot 2024-05-09 153119.png" style="width: 70%;">
+                                    <figcaption>Keeping the image carousel</figcaption>
+                                </div>
+
+                                <div class="gabung">
+                                    <video width="500" controls>
+                                        <source src="./videos/Recording 2024-05-09 153152.mp4">
+                                    </video>
+                                </div>
+                            </aside>
+                        </div> <br>
+
+                        <h4>Feedback 2</h4>
+                        <div class="feedback">
+                            <p>
+                                I texted Chris and showed him the new image carousel idea and asked if it was suitable. He provided the following feedback:
+                                <ul>
+                                    <li>It <span class="highlight">hides the information</span> behind slides, making teachers go back and forth.</li>
+                                    <li>There is a risk of <span class="highlight">missing information</span> because it's hard to scan the content.</li>
+                                </ul>
+                            </p>
+                        </div>
+
+                        <h4>Iteration 2</h4>
+                        <div class="mboh">
+                            <p>
+                                Once I determined the <span class="highlight">best layout</span>, I sketched it out to decide what elements to include. Fortunately, Chris provided some <span class="highlight">helpful tips</span> on <span class="highlight">how to structure</span> the content effectively. I then implemented these improvements directly into my portfolio.
+                            </p>
+
+                            <aside id="gabung-pls">
+                                <div class="gabung">
+                                    <img src="./images/Screenshot 2024-05-28 220335.png" style="width: 70%;">
+                                    <figcaption>Final layout</figcaption>
+                                </div>
+                                <div class="gabung">
+                                    <img src="./images/IMG_1968.jpg" style="width: 70%;">
+                                    <figcaption>Sketch for PDF layout</figcaption>
+                                </div>
+                            </aside>
+                        </div>
+
+
+                        <h4>Validating Iteration 2</h4>
+                        
+
 
                     </div>
-                      
+
+                    <h3>Reflection</h3>
+                    <p>
+                        <span class="how">How it went</span>: Initially, my <span class="highlight">content</span> was  <span class="highlight">not clear</span> enough for the teachers to read and grade efficiently. By drawing <span class="highlight">inspirations</span> from Pinterest and sketching a new layout, I made significant <span class="highlight">improvements</span>. Chris's feedback was valuable, guiding me through several iterations.<br><br>
+                        <span class="how">What I learned</span>: I learned the importance of <span class="highlight">clear</span> and <span class="highlight">structured content</span> in design. While creative elements like the carousel can be visually appealing, they should not compromise the <span class="highlight">usability</span> and <span class="highlight">readability</span> of the content. I also learned to balance my creative ideas with practical considerations to ensure that the final product meets the needs of its users.<br><br>
+                        <span class="how">What will change</span>: I will prioritize <span class="highlight">clarity</span> and <span class="highlight">usability</span> from the outset. I will seek <span class="highlight">feedback</span> early and often, so that my designs are both creative and functional. Additionally, I will be more flexible in letting go of design elements that do not serve the overall usability and readability of the content.
+                    </p>
                     
-                    <button class="prev" onclick="moveCarousel(-1)">❮</button>
-                    <button class="next" onclick="moveCarousel(1)">❯</button>
-                </div>
-                <br>
 
+                    <!-- <h4>Links</h4>
+                    <div class="links">
+                        <a href="#">#</a>
+                    </div> -->
+                </section>
                 
-                <!-- <div class="Description">
-                    
-                    <aside>
-                        <h3>Links</h3>
-                        <a href="#">—</a>
-                        
-                    </aside>
-                </div> -->
-
-                
-            </div>
-
-            <div class="secondary-container">
-                <div class="Feedback">
-                    <header>Feedback</header> <br>
-                    <section>
-                        <h3>Feedback 1 — </h3>
-                        <p> After our coaching session, I asked Anke on what she thinks about my portfolio. She told me that she wants to see a brief explanation on what the content is about.
-                        </p>
-                        
-                    </section>
-                </div>
-
-                <div class="Reflection">
-                    <header>Reflection</header> <br>
-                    <section>
-                        <h3>Iteration 1 —</h3>
-                        <p>
-                            I decided to delete the apps images since I think it's unnecessary, so i replaces it with description instead.
-                        </p>
-                    </section>
-                </div>
             </div>
         </main>
-
-
-
-
         <script>
-            let currentIndex = 0;
-
-            function moveCarousel(direction) {
-            const carousel = document.querySelector('.carousel');
-            const carouselWidth = carousel.clientWidth;
-            const numItems = carousel.children.length;
-
-            currentIndex = (currentIndex + direction + numItems) % numItems;
-            const offset = -currentIndex * carouselWidth;
-
-            carousel.style.transform = `translateX(${offset}px)`;
-            }
-
-            /*naavigation*/
 
             const dropdownContent = document.getElementById("dropdownContent");
 
