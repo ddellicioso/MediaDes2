@@ -258,10 +258,8 @@ figcaption {
     font-size: 1.2em;
 }
 
-#gabung {
-    margin: 1rem;
-    background-color: red;
-    width: 100%;
+.gabung {
+    padding: 1rem;
 }
 
 #gabung-pls {
@@ -270,6 +268,7 @@ figcaption {
     align-items: center;
     justify-content: center;
 }
+
 .validate {
     margin-left: 2rem;
 }
@@ -285,3 +284,4 @@ figcaption {
     font-weight: 600;
     text-decoration: underline;
 }
+
