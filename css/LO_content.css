@@ -242,7 +242,7 @@ aside img:hover {
 }
 
 figcaption {
-    font-size: 0.9vw;
+    font-size: 1.1vw;
     font-style: italic;
 }
 
@@ -281,5 +281,7 @@ figcaption {
 }
 
 .how {
+    color: #e314a8;
+    font-weight: 600;
     text-decoration: underline;
 }

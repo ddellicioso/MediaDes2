@@ -1,0 +1,203 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/LO_content.css">
+        <script src="script.js"></script>
+        <title>Media Development - LO3</title>
+    </head>
+    <body>
+        <nav>
+            <a href="patisserie.html" class="homelogo">
+                <img src="./images/Asset 5.png" class="homelogo"> 
+              </a>
+        
+            <div class="dropdown">
+                <button onclick="toggleMenu()" class="dropbtn"> ☰ </button>
+                <div id="dropdownContent" class="dropdown-content">
+                    <div class="search-wrapper"> 
+                        <input type="text" class="input" id="mySearch" onkeyup="filterMenu()" placeholder="Search..." title="Type in a category">
+                    </div>
+                    <ul id="myMenu">
+                        <li class="has-submenu">
+                            <div>
+                                <a href="LO_room.html">Learning Outcomes</a>
+                                <ul class="submenu">
+                                    <li><a href="LO1.html">LO 1</a></li>
+                                    <li><a href="LO2.html">LO 2</a></li>
+                                    <li><a href="LO3.html">LO 3</a></li>
+                                    <li><a href="LO4.html">LO 4</a></li>
+                                    <li><a href="LO5.html">LO 5</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>              
+        </nav>
+        <main>
+            <div class="main-container">
+                <header>
+                    Fontys Website Iteration
+                </header>
+                <section>
+                    <h3>Description</h3>
+                    <p>
+                        We had a previous Figma prototype from an earlier project (I wasn't part of the prototype team) and extracted elements we liked and agreed upon. Then, we created a new <a href="https://www.figma.com/design/AAM85eXIAgtEA4kjhAMUHJ/Development?node-id=0%3A1&t=nP8XJS3uuH3CIGbR-1" target="_blank">Figma prototype</a> to establish a general idea and theme/colors aligned with Fontys' brand guide. The next step was conducting a user <span class="highlight">research survey</span> or <span class="highlight">A/B Testing</span> targeting Dutch teenagers to determine their preferred designs and content.
+                    </p>
+
+                    <div class="did">
+                        <h3>What I Did</h3>
+
+                        <div class="did_content">
+                            <p>
+                                My role was to design the <span class="highlight">profile page</span> (Media Design). In the survey, I asked respondents to select their preferred <span class="highlight">design and colors</span> and provided insights on how the <span class="highlight">content should be organized</span>. <br><br>
+                                I created multiple iterations of the page (version 1 based on our team's preferences, version 2 reflecting teachers' suggestions, and the final version incorporating feedback from our target audience) 
+                                <br>*also mentioned in <a href="LO1_MedDev.html" target="_blank">Learning Outcome 1</a> *.
+                            </p>
+
+                            <aside>
+                                <img src="./images/Screenshot 2024-05-23 195222.png" style="width: 70%;">
+                                <figcaption>Ver 1, Ver 2, Final Ver respectively</figcaption>
+                            </aside>
+                        </div>
+
+                        <h4>Feedback 1</h4>
+                        <div class="feedback">
+                            <p>
+                                We approached Jan for feedback on our prototype. Here are his suggestions:
+                                <ul>
+                                    <li>Agreed with separating the semester planning and example projects for clarity</li>
+                                    <li>Appreciated the <span class="highlight">purple button</span> for its eye-catching appeal</li>
+                                    <li>Favored the "card" style for Job Opportunities because it is visually appealing and avoids long texts</li>
+                                </ul>
+                            </p>
+                        </div>
+
+                        <h4>Iteration 1</h4>
+                        <div class="did_content">
+                            <p>
+                                Based on the feedback, I made several changes:
+                                <br> I changed the header color to pink to <span class="highlight">align with Fontys' brand guide</span> and adjusted the font weight.
+                                <br> For the Contact Us section, I changed the color to purple to match the rest of the page. I also replaced the box with a form so users can <span class="highlight">directly write their messages</span> without needing to go to their email.
+                            </p>
+
+                            <aside>
+                                <img src="./images/Screenshot 2024-05-23 195222 copy.png" style="width: 70%;">
+                                <figcaption>Version 1 VS Version 2</figcaption>
+                            </aside>
+                        </div>
+
+                        <div class="validate">
+                            <h4>Validating Iteration 1</h4>
+                            <div class="feedback">
+                                <p> I asked a friend to validate the changes, and this was her feedback:
+                                    <ul>
+                                        <li>The <span class="highlight">pink header</span> is more prominent and eye-catching</li>
+                                        <li>Good content structure</li>
+                                        <li>The <span class="highlight">Contact Us section</span> looks better in purple, matching the rest of the page</li>
+                                        <li>Removing the unnecessary photo from the old Contact Us section was a good move</li>
+                                        <li>The contact form is an improvement because <span class="highlight">fewer steps to contact</span> make it more user-friendly</li>
+                                    </ul>
+                                </p>
+                            </div>    
+                        </div>
+
+                        <h4>Feedback (2) from survey</h4>
+                        <div class="feedback">
+                            <p>
+                                I compiled the answers from the <a href="https://docs.google.com/document/d/1XAmOS1DuFbbAK4KB69Uhnzn66WNYS_fCV3_DnjuRd7o/edit?usp=sharing" target="_blank">survey</a> we conducted, where people were asked about their preferred designs and content structure.
+                                <ul>
+                                    <li>Wants a <span class="highlight">straightforward</span>, <span class="highlight">easy to understand</span> layout</li>
+                                    <li>Balance <span class="highlight">texts</span> and <span class="highlight">images</span></li>
+                                    <li>Use more <span class="highlight">color</span> to make the layout more <span class="highlight">visually appealing</span></li>
+                                    <li>The structure of the content would be: description of the profile, semester planning, example project, example schedule, job opportunities, and contact us; respectively.</li>
+                                </ul>
+                            </p> 
+
+                            <aside id="kegedean">
+                                <img src="./images/Screenshot 2024-05-29 144514.png" style="width: 110%;">
+                                <figcaption>Survey design for the profile page</figcaption>
+                            </aside>
+                        </div>
+
+                        <h4>Iteration 2</h4>
+                        <div class="did_content">
+                            <p>
+                                After receiving the answers, I directly fixed the prototype to match the survey results. I <span class="highlight">separated</span> the semester planning from the example project, changed the button to <span class="highlight">purple</span>, as well as the contact us section, and also revised the career prospects section.
+                            </p>
+
+                            <aside>
+                                <img src="./images/Screenshot 2024-05-23 195222 copy2.png" style="width: 70%;">
+                                <figcaption>Version 2 VS Final Version</figcaption>
+                            </aside>
+                        </div>
+
+
+
+                        <div class="validate">
+                            <h4>Validating Iteration 2</h4>
+                            <div class="feedback">
+                                <p>
+                                    Another friend reviewed and validated the second version:
+                                    <ul>
+                                        <li>Agreed that separating the semester planning and example projects makes the content more <span class="highlight">straightforward</span></li>
+                                        <li>Appreciated the <span class="highlight">purple button</span> for being more <span class="highlight">eye-catching</span></li>
+                                        <li>Liked the <span class="highlight">"card"</span> style for Job Opportunities, noting that most people are <span class="highlight">attracted to visuals</span> rather than long texts</li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+
+
+                    <h3>Reflection</h3>
+                    <p>
+                        <span class="how"> How it went </span>: Remarkably, the process unfolded <span class="highlight">exceptionally well</span>, despite the significant time invested in user tests, research, and prototype iterations. Feedback from our test participants was predominantly <span class="highlight">positive</span>. Although there were instances where our group <span class="highlight">lacked initiative</span>, we still managed to complete the project satisfactorily. <br><br>
+                        <span class="how"> What I learned</span>: I discovered the immense value of <span class="highlight">user testing and research</span> in guiding design decisions, particularly during challenging moments when choosing and refining designs. <br><br>
+                        <span class="how"> What will change</span>: Moving forward, I intend to initiate <span class="highlight">user testing and research</span> earlier in the prototype development process, aiming to <span class="highlight">minimize time wastage</span>.
+                    </p>
+                    
+
+                    <!-- <h4>Links</h4>
+                    <div class="links">
+                        <a href="#">#</a>
+                    </div> -->
+                </section>
+                
+            </div>
+        </main>
+        <script>
+
+            const dropdownContent = document.getElementById("dropdownContent");
+
+            function toggleMenu() {
+            dropdownContent.classList.toggle("show");
+            }
+
+            function filterMenu() {
+            const input = document.getElementById("mySearch");
+            const filter = input.value.toUpperCase();
+            const ul = document.getElementById("myMenu");
+            const li = ul.getElementsByTagName("li");
+
+            for (let i = 0; i < li.length; i++) {
+                const a = li[i].getElementsByTagName("a")[0];
+                const txtValue = a.textContent || a.innerText; // Handle potential textContent issues
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+                } else {
+                li[i].style.display = "none";
+                }
+            }
+            }
+
+            // Initialize the dropdown to be hidden by default
+            window.onload = function() {
+            dropdownContent.classList.remove("show");
+            }
+        </script>
+    </body>
+</html>
