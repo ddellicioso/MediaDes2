@@ -1,0 +1,150 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/LO_content.css">
+        <script src="script.js"></script>
+        <title>Branding - LO1</title>
+    </head>
+    <body>
+        <nav>
+            <a href="patisserie.html" class="homelogo">
+                <img src="./images/Asset 5.png" class="homelogo"> 
+              </a>
+        
+            <div class="dropdown">
+                <button onclick="toggleMenu()" class="dropbtn"> ☰ </button>
+                <div id="dropdownContent" class="dropdown-content">
+                    <div class="search-wrapper"> 
+                        <input type="text" class="input" id="mySearch" onkeyup="filterMenu()" placeholder="Search..." title="Type in a category">
+                    </div>
+                    <ul id="myMenu">
+                    <li class="has-submenu">
+                        <div>
+                            <a href="LO_room.html">Learning Outcomes</a>
+                            <ul class="submenu">
+                                <li><a href="LO1.html">LO 1</a></li>
+                                <li><a href="LO2.html">LO 2</a></li>
+                                <li><a href="LO3.html">LO 3</a></li>
+                                <li><a href="LO4.html">LO 4</a></li>
+                                <li><a href="LO5.html">LO 5</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="has-submenu">
+                        <div>
+                            <a href="#">Projects</a>
+                            <ul class="submenu">
+                                <li><a href="#">Submenu Item 1</a></li>
+                                <li><a href="#">Submenu Item 2</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">Abouts</a></li>
+                    </ul>
+                </div>
+            </div>              
+        </nav>
+        <main>
+            <div class="main-container">
+                <header>
+                    Learning Adobe Illustrator
+                </header>
+                <section>
+                    <h3>Description</h3>
+                    <p>
+                        The first time I used Illustrator is when I started <a href="" class="highlight">joining Eindhoven League</a> in December 2023 as a social media person. So I was very much needed to start learning Illustrator to illustrate logo and posters *see in <a href="LO3_EindLeague.html" class="highlight">here</a>
+                    </p>
+
+                    <div class="did">
+                        <h3>What I Did</h3>
+
+                        <div class="ntah">
+                            <p>
+                                The first thing I needed to make was a <span class="highlight">logo</span> for Eindhoven League, and it was something with <span class="highlight">gears</span> and sports balls (soccer ball, volley ball, basket ball). I was very confused at first so I decided to go to YouTube to look for some tutorials how to make gears and those sport balls.
+                                <br><br>
+                                I also needed to put some <span class="highlight">neon effects</span> on both logo and poster, which turns out after I watched the tutorials, I only need to copy paste <span class="highlight">Gaussian Blur</span> for couple of times. <br><br>
+
+                                The hardest part for me is that making the <span class="highlight">glitch effect</span> in the logo. If u see properly, there are some <span class="highlight">distortion</span> in it and it makes my laptop dead for couple of times and I had to repeat it several times until I almost given up on it.
+                                <br><br>
+                                For the glitch part in the poster, I only cut the words horizontally into 3 parts and I just moved it a little bit so it can mimick the glitch movement.
+                            </p>
+
+                            <aside id="samping">
+                                <img src="./images/Screenshot 2024-02-04 204856.png" style="width: 80%;">
+                                <figcaption>Eindhoven League logo</figcaption>
+                                <br>
+                                <img src="./images/Screenshot 2024-02-06 151629.png">
+                                <figcaption>Eindhoven League poster</figcaption>
+                            </aside>
+
+                        </div>
+                        <aside id="capek">
+                            <div class="gabung">
+                                <img src="./images/Screenshot 2024-05-30 142436.png" style="width: 60%;">
+                                <figcaption>Gears tutorials</figcaption>    
+                            </div>
+
+                            <div class="gabung">
+                                <img src="./images/Screenshot 2024-05-30 142517.png">
+                                <figcaption>Neon effects</figcaption>
+                            </div>
+
+                            <div class="gabung">
+                                <img src="./images/Screenshot 2024-05-30 142525.png">
+                                <figcaption>Glitch effect on logo</figcaption>
+                            </div>
+                            
+                        </aside>
+                        
+                        
+                    </div>
+
+                    <h3>Reflection</h3>
+                    <p>
+                        <span class="how">How it went</span>: My journey with Illustrator kicked off when I <span class="highlight">joined</span> the Eindhoven League in December 2023. While initially daunting, I found my footing through YouTube tutorials, which proved invaluable in <span class="highlight">navigating</span> Illustrator's features. Despite encountering <span class="highlight">technical hurdles</span>, such as laptop crashes during glitch effect implementation, I <span class="highlight">persevered</span> and successfully completed the tasks at hand.<br><br>
+                        <span class="how">What I learned</span>: Through this experience, I gained proficiency in Illustrator, mastering techniques like applying <span class="highlight">neon effects</span> and creating <span class="highlight">glitch effects</span>. Moreover, I cultivated resilience in the face of challenges, learning to <span class="highlight">troubleshoot</span> effectively and persist until achieving desired outcomes. This hands-on experience significantly enhanced my design skills and confidence in utilizing design software.<br><br>
+                        <span class="how">What will change</span>: Moving forward, I aim to approach projects with a more <span class="highlight">strategic mindset</span>, allocating adequate time for troubleshooting and seeking assistance when needed. Additionally, I plan to <span class="highlight">further explore</span> Illustrator's capabilities through diverse learning resources to enhance my proficiency. By embracing challenges as opportunities for growth and maintaining a proactive attitude, I look forward to continuing my journey in graphic design.
+                    </p>
+
+
+                    <!-- <h4>Links</h4>
+                    <div class="links">
+                        <a href="#">#</a>
+                    </div> -->
+                </section>
+                
+            </div>
+        </main>
+        <script>
+
+            const dropdownContent = document.getElementById("dropdownContent");
+
+            function toggleMenu() {
+            dropdownContent.classList.toggle("show");
+            }
+
+            function filterMenu() {
+            const input = document.getElementById("mySearch");
+            const filter = input.value.toUpperCase();
+            const ul = document.getElementById("myMenu");
+            const li = ul.getElementsByTagName("li");
+
+            for (let i = 0; i < li.length; i++) {
+                const a = li[i].getElementsByTagName("a")[0];
+                const txtValue = a.textContent || a.innerText; // Handle potential textContent issues
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+                } else {
+                li[i].style.display = "none";
+                }
+            }
+            }
+
+            // Initialize the dropdown to be hidden by default
+            window.onload = function() {
+            dropdownContent.classList.remove("show");
+            }
+        </script>
+    </body>
+</html>

@@ -213,6 +213,10 @@ p{
     margin-left: 3rem;
 }
 
+.feedback ol{
+    margin-left: 3rem;
+}
+
 .feedback {
     display: flex;
     width: 100%;
@@ -256,6 +260,20 @@ figcaption {
 
 #kegedean figcaption{
     font-size: 1.2em;
+}
+
+#capek {
+    display: flex;
+    flex-direction: row;
+}
+
+#samping {
+    display: flex;
+    flex-direction: column;
+}
+
+.ntah {
+    display: flex;
 }
 
 .gabung {

@@ -1,0 +1,143 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/LO_content.css">
+        <script src="script.js"></script>
+        <title>Branding - LO1</title>
+    </head>
+    <body>
+        <nav>
+            <a href="patisserie.html" class="homelogo">
+                <img src="./images/Asset 5.png" class="homelogo"> 
+              </a>
+        
+            <div class="dropdown">
+                <button onclick="toggleMenu()" class="dropbtn"> ☰ </button>
+                <div id="dropdownContent" class="dropdown-content">
+                    <div class="search-wrapper"> 
+                        <input type="text" class="input" id="mySearch" onkeyup="filterMenu()" placeholder="Search..." title="Type in a category">
+                    </div>
+                    <ul id="myMenu">
+                        <li class="has-submenu">
+                            <div>
+                                <a href="LO_room.html">Learning Outcomes</a>
+                                <ul class="submenu">
+                                    <li><a href="LO1.html">LO 1</a></li>
+                                    <li><a href="LO2.html">LO 2</a></li>
+                                    <li><a href="LO3.html">LO 3</a></li>
+                                    <li><a href="LO4.html">LO 4</a></li>
+                                    <li><a href="LO5.html">LO 5</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>              
+        </nav>
+        <main>
+            <div class="main-container">
+                <header>
+                    Groups Files Organizing 
+                </header>
+                <section>
+                    <h3>Description</h3>
+                    <p>
+                        For overall management of our files, all of my groups (<span class="highlight">project 1, 2, and 3</span>) used the same <span class="highlight">apps</span>. For every group project, I made sure to make a new group in <span class="highlight">Teams</span> so that we can compile our <span class="highlight">files</span> that we made for the group projects in there nicely and everyone in the group can access it.  
+                    </p>
+
+                    <div class="did">
+                        <h3>What I Did</h3>
+    
+                        <div class="feedback">
+                            <p> These are the <span class="highlight">apps</span> that we used to organize our work as a team:
+                                <ol>
+                                    <li><span class="highlight">Microsoft Teams</span>:</li>
+                                        <ul>
+                                            <li>We used it as a place to <span class="highlight">upload and organize our files</span></li>
+                                            <li>We were able to <span class="highlight">simultaneously edit our documents</span> together (e.g., Word, PowerPoint, etc.)</li>
+                                            <li>We used it for <span class="highlight">project management</span> such as using <span class="highlight">Planner</span> to create tasks and assign them to team members</li>
+                                        </ul>
+                                    <li><span class="highlight">WhatsApp</span>:</li>
+                                        <ul>
+                                            <li>We always made a <span class="highlight">group chat</span> so we can <span class="highlight">communicate</span> easily</li>
+                                            <li>When needed, we would arrange <span class="highlight">voice calls</span> to discuss when some members couldn't join us in school </li>
+                                        </ul>
+                                </ol>
+                            </p>
+    
+                            <aside id="gabung-pls">
+                                <div class="gabung">
+                                    <img src="./images/Screenshot 2024-05-30 120544.png">
+                                    <figcaption>Files</figcaption>
+                                </div>
+    
+                                <div class="gabung">
+                                    <img src="./images/Screenshot 2024-05-30 120506.png" style="width: 70%;">
+                                    <figcaption>Planner</figcaption>
+                                </div>
+    
+                            </aside>
+                        </div>
+
+                        <!-- <h4>Feedback</h4>
+                        <div class="did_content">
+                            <p>
+
+                            </p>
+
+                            <aside>
+
+                            </aside>
+                        </div> -->
+                        
+                    </div>
+
+                    <h3>Reflection</h3>
+                    
+                    <p>
+                        <span class="how">How it went</span>: Managing the <span class="highlight">files</span> and <span class="highlight">communications</span> for our group projects using <span class="highlight">Microsoft Teams</span> and <span class="highlight">WhatsApp</span> was effective and streamlined our collaborative efforts. Setting up new groups in Teams for each project allowed us to <span class="highlight">compile</span> and <span class="highlight">organize</span> our files efficiently. Using Teams for <span class="highlight">real-time document editing</span> and <span class="highlight">project management tasks</span> enhanced our <span class="highlight">productivity</span>. Additionally, WhatsApp provided a convenient platform for <span class="highlight">quick communication</span> and <span class="highlight">voice calls</span> when necessary, ensuring that everyone stayed <span class="highlight">updated</span> and <span class="highlight">involved</span>.<br><br>
+                        <span class="how">What I learned</span>: I learned the importance of having a <span class="highlight">centralized location</span> for all <span class="highlight">project-related files</span>. This practice ensured that every team member had access to the latest versions of documents, which minimized <span class="highlight">confusion</span> and streamlined our <span class="highlight">workflow</span>.<br><br>
+                        <span class="how">What will change</span>: I would implement more <span class="highlight">structured planning sessions</span> at the beginning of the project to outline our <span class="highlight">goals</span>, <span class="highlight">deadlines</span>, and <span class="highlight">individual responsibilities</span> more clearly. This would provide a stronger foundation for our collaboration. I also would explore <span class="highlight">additional features</span> within <span class="highlight">Ms Teams</span>, such as integrated <span class="highlight">apps</span> and more advanced <span class="highlight">project management tools</span>, to further enhance our workflow and efficiency.
+                    </p>
+
+                    <!-- <h4>Links</h4>
+                    <div class="links">
+                        <a href="#">#</a>
+                    </div> -->
+                </section>
+                
+            </div>
+        </main>
+        <script>
+
+            const dropdownContent = document.getElementById("dropdownContent");
+
+            function toggleMenu() {
+            dropdownContent.classList.toggle("show");
+            }
+
+            function filterMenu() {
+            const input = document.getElementById("mySearch");
+            const filter = input.value.toUpperCase();
+            const ul = document.getElementById("myMenu");
+            const li = ul.getElementsByTagName("li");
+
+            for (let i = 0; i < li.length; i++) {
+                const a = li[i].getElementsByTagName("a")[0];
+                const txtValue = a.textContent || a.innerText; // Handle potential textContent issues
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+                } else {
+                li[i].style.display = "none";
+                }
+            }
+            }
+
+            // Initialize the dropdown to be hidden by default
+            window.onload = function() {
+            dropdownContent.classList.remove("show");
+            }
+        </script>
+    </body>
+</html>

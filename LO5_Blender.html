@@ -1,0 +1,134 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/LO_content.css">
+        <script src="script.js"></script>
+        <title>Blender - LO5</title>
+    </head>
+    <body>
+        <nav>
+            <a href="patisserie.html" class="homelogo">
+                <img src="./images/Asset 5.png" class="homelogo"> 
+              </a>
+        
+            <div class="dropdown">
+                <button onclick="toggleMenu()" class="dropbtn"> ☰ </button>
+                <div id="dropdownContent" class="dropdown-content">
+                    <div class="search-wrapper"> 
+                        <input type="text" class="input" id="mySearch" onkeyup="filterMenu()" placeholder="Search..." title="Type in a category">
+                    </div>
+                    <ul id="myMenu">
+                    <li class="has-submenu">
+                        <div>
+                            <a href="LO_room.html">Learning Outcomes</a>
+                            <ul class="submenu">
+                                <li><a href="LO1.html">LO 1</a></li>
+                                <li><a href="LO2.html">LO 2</a></li>
+                                <li><a href="LO3.html">LO 3</a></li>
+                                <li><a href="LO4.html">LO 4</a></li>
+                                <li><a href="LO5.html">LO 5</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    </ul>
+                </div>
+            </div>              
+        </nav>
+        <main>
+            <div class="main-container">
+                <header>
+                    Learning Blender
+                </header>
+                <section>
+                    <h3>Description</h3>
+                    <p>
+                        My efforts to learn Blender by watching tutorials in YouTube
+                    </p>
+
+                    <div class="did">
+                        <h3>What I Did</h3>
+
+                        <div class="did_content">
+                            <p>
+                                This is the <span class="highlight">first time</span>  I ever touched Blender and I've always wanted to try to make some 3D things. I wanted to be a <span class="highlight">horror game designer</span> so that means I want to be in <span class="highlight">Game Design specialization</span> later in <span class="highlight">semester 4</span>. 
+                                <br><br>
+                                The first time I used Blender, so ofcourse I looked into some <span class="highlight">YouTube tutorials</span> and I found a popular tutorials from <span class="highlight">Blender Guru</span>. The tutorials showed how to make a <span class="highlight">donut</span> but I <span class="highlight">don't want</span> to just <span class="highlight">blindly following</span> him so I decided to make a tart <span class="highlight">cake</span> instead.
+                                <br><br>
+                                So far, I <span class="highlight">really liked sculpting</span> and I found myself enjoying it so much. Unfortunately, lately I <span class="highlight">didn't have any time</span> to continue my cake even though I really want to start learning about coloring, texturing and more.
+                                <br><br>
+                                Other than watching YouTube, I also <span class="highlight">joined Blender workshops</span> at school. Currently we are learning on how to make a <span class="highlight">kitchen diorama</span>, and it was fun and <span class="highlight">not too complex</span> and intimidating for me so I really enjoyed it.
+
+                            </p>
+
+                            <aside>
+                                <img src="./images/Screenshot 2024-05-30 140509.png">
+                                <figcaption>Donut Blender Tutorials</figcaption>
+                                <br>
+
+                                <img src="./images/Screenshot 2024-05-19 222126.png">
+                                <figcaption>Cake I made</figcaption> <br>
+
+                                <img src="./images/Screenshot 2024-05-22 143906.png">
+                                <figcaption>Kitchen diorama</figcaption>
+                            </aside>
+                        </div>
+
+                        <h4>Feedback</h4>
+                        <div class="did_content">
+                            <p>
+                                *coming soon*
+                            </p>
+
+                            <aside>
+
+                            </aside>
+                        </div>
+                        
+                    </div>
+
+                    <h3>Reflection</h3>
+                    <p>
+                        *coming soon*
+                    </p>
+
+                    <!-- <h4>Links</h4>
+                    <div class="links">
+                        <a href="#">#</a>
+                    </div> -->
+                </section>
+                
+            </div>
+        </main>
+        <script>
+
+            const dropdownContent = document.getElementById("dropdownContent");
+
+            function toggleMenu() {
+            dropdownContent.classList.toggle("show");
+            }
+
+            function filterMenu() {
+            const input = document.getElementById("mySearch");
+            const filter = input.value.toUpperCase();
+            const ul = document.getElementById("myMenu");
+            const li = ul.getElementsByTagName("li");
+
+            for (let i = 0; i < li.length; i++) {
+                const a = li[i].getElementsByTagName("a")[0];
+                const txtValue = a.textContent || a.innerText; // Handle potential textContent issues
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+                } else {
+                li[i].style.display = "none";
+                }
+            }
+            }
+
+            // Initialize the dropdown to be hidden by default
+            window.onload = function() {
+            dropdownContent.classList.remove("show");
+            }
+        </script>
+    </body>
+</html>

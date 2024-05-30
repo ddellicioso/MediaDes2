@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/LO_content.css">
+        <script src="script.js"></script>
+        <title>Project 3 User Research - LO4</title>
+    </head>
+    <body>
+        <nav>
+            <a href="patisserie.html" class="homelogo">
+                <img src="./images/Asset 5.png" class="homelogo"> 
+              </a>
+        
+            <div class="dropdown">
+                <button onclick="toggleMenu()" class="dropbtn"> ☰ </button>
+                <div id="dropdownContent" class="dropdown-content">
+                    <div class="search-wrapper"> 
+                        <input type="text" class="input" id="mySearch" onkeyup="filterMenu()" placeholder="Search..." title="Type in a category">
+                    </div>
+                    <ul id="myMenu">
+                    <li class="has-submenu">
+                        <div>
+                            <a href="LO_room.html">Learning Outcomes</a>
+                            <ul class="submenu">
+                                <li><a href="LO1.html">LO 1</a></li>
+                                <li><a href="LO2.html">LO 2</a></li>
+                                <li><a href="LO3.html">LO 3</a></li>
+                                <li><a href="LO4.html">LO 4</a></li>
+                                <li><a href="LO5.html">LO 5</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    </ul>
+                </div>
+            </div>              
+        </nav>
+        <main>
+            <div class="main-container">
+                <header>
+                    Project 3 : User Research
+                </header>
+                <section>
+                    <h3>Description</h3>
+                    <p>
+                        This <a href="https://docs.google.com/document/d/1XAmOS1DuFbbAK4KB69Uhnzn66WNYS_fCV3_DnjuRd7o/edit?usp=sharing" target="_blank">report</a>  summarizes the findings of a user survey conducted to gather feedback on the Fontys website, specifically focusing on the ICT program. Participants provided insights on <span class="highlight">design preferences</span>, <span class="highlight">content importance</span>, and <span class="highlight">user experience</span>, highlighting areas for improvement to enhance the website's appeal and usability.
+                    </p>
+                    
+                    <div class="did">
+                        <h3>What I Did</h3>
+                    
+                        <div class="feedback">
+                            <p>
+                                I made the survey by putting together a bunch of questions to <span class="highlight">find out</span>  what people really <span class="highlight">thought</span> about the <span class="highlight">Fontys website</span>, especially the <span class="highlight">ICT programs</span> part. After spreading the survey and getting <span class="highlight">diverse</span> bunch of students, I started sorting through them. I spotted some patterns and cool insights that I turned into <span class="highlight">practical suggestions</span>. I pitched these ideas to my teammates and we started to make our products.
+                                <br>
+                                With the survey in hand, I made a comprehensive report summarizing <span class="highlight">key insights</span> and participant feedback. I used this report as a <span class="highlight">foundation</span> to <a href="LO3_P3MedDev.html">iterate my prototype</a> which later on will be implemented in the website.
+                            </p>
+                        </div>
+                        
+                    </div>
+                    
+                    <h3>Reflection</h3>
+                    <p>
+                        <span class="how">How it went</span>: The survey yielded valuable insights into <span class="highlight">user preferences</span> and areas for improvement on the Fontys website. Participants provided constructive feedback on <span class="highlight">design elements</span>, <span class="highlight">content sections</span>, and overall <span class="highlight">user experience</span>.<br><br>
+                        <span class="how">What I learned</span>: I learned bout participants' preferences for <span class="highlight">design elements</span>, including the use of purple and bordered elements, while also noting suggestions for improving <span class="highlight">readability</span> and visual appeal. I also gained insights into <span class="highlight">user expectations</span> for a <span class="highlight">user-friendly layout</span> that avoids information overload and maintains a balance between text and images.<br><br>
+                        <span class="how">What will change</span>: I'd adopt a <span class="highlight">user-centered design approach</span> to create an engaging and <span class="highlight">user-friendly website</span> that effectively communicates the benefits and details of Fontys' ICT programs.
+                    </p>
+                    
+
+                    <!-- <h4>Links</h4>
+                    <div class="links">
+                        <a href="#">#</a>
+                    </div> -->
+                </section>
+                
+            </div>
+        </main>
+        <script>
+
+            const dropdownContent = document.getElementById("dropdownContent");
+
+            function toggleMenu() {
+            dropdownContent.classList.toggle("show");
+            }
+
+            function filterMenu() {
+            const input = document.getElementById("mySearch");
+            const filter = input.value.toUpperCase();
+            const ul = document.getElementById("myMenu");
+            const li = ul.getElementsByTagName("li");
+
+            for (let i = 0; i < li.length; i++) {
+                const a = li[i].getElementsByTagName("a")[0];
+                const txtValue = a.textContent || a.innerText; // Handle potential textContent issues
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+                } else {
+                li[i].style.display = "none";
+                }
+            }
+            }
+
+            // Initialize the dropdown to be hidden by default
+            window.onload = function() {
+            dropdownContent.classList.remove("show");
+            }
+        </script>
+    </body>
+</html>

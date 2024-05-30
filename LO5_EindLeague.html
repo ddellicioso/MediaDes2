@@ -3,7 +3,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/LO_content.css">
-        <title>LO5 - Eindhoven League</title>
+        <script src="script.js"></script>
+        <title>Eindhoven League - LO5</title>
     </head>
     <body>
         <nav>
@@ -12,170 +13,83 @@
               </a>
         
             <div class="dropdown">
-              <button onclick="toggleMenu()" class="dropbtn"> ☰ </button>
-              <div id="dropdownContent" class="dropdown-content">
-                <div class="search-wrapper"> 
-                  <input type="text" class="input" id="mySearch" onkeyup="filterMenu()" placeholder="Search..." title="Type in a category">
+                <button onclick="toggleMenu()" class="dropbtn"> ☰ </button>
+                <div id="dropdownContent" class="dropdown-content">
+                    <div class="search-wrapper"> 
+                        <input type="text" class="input" id="mySearch" onkeyup="filterMenu()" placeholder="Search..." title="Type in a category">
+                    </div>
+                    <ul id="myMenu">
+                      <li class="has-submenu">
+                          <div>
+                              <a href="LO_room.html">Learning Outcomes</a>
+                              <ul class="submenu">
+                                  <li><a href="LO1.html">LO 1</a></li>
+                                  <li><a href="LO2.html">LO 2</a></li>
+                                  <li><a href="LO3.html">LO 3</a></li>
+                                  <li><a href="LO4.html">LO 4</a></li>
+                                  <li><a href="LO5.html">LO 5</a></li>
+                              </ul>
+                          </div>
+                      </li>
+                    </ul>
                 </div>
-                <ul id="myMenu">
-                  <li class="has-submenu">
-                    <div>
-                      <a href="LO_room.html">Learning Outcomes</a>
-                      <ul class="submenu">
-                        <li><a href="LO1.html">LO 1</a></li>
-                        <li><a href="LO2.html">LO 2</a></li>
-                        <li><a href="LO3.html">LO 3</a></li>
-                        <li><a href="LO4.html">LO 4</a></li>
-                        <li><a href="LO5.html">LO 5</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="has-submenu">
-                    <div>
-                      <a href="#">Projects</a>
-                      <ul class="submenu">
-                        <li><a href="#">Submenu Item 1</a></li>
-                        <li><a href="#">Submenu Item 2</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li><a href="#">Abouts</a></li>
-                </ul>
-              </div>
-            </div>           
+            </div>              
         </nav>
         <main>
-            <!-- portfolio content -->
             <div class="main-container">
-                <header style="width: 30%;">Eindhoven League</header><br>
-                <div class="carousel-container">
-                    <div class="carousel">
-                         <div class="carousel-item">
-                            <div class="numbertext">1/
-                            <img src="./images/Initial palete EL.jpg" alt="initial color pallete">
-                            </div>    
-                          </div>
+                <header>
+                  Eindhoven League
+                </header>
+                <section>
+                  <h3>Description</h3>
+                  <p> The Eindhoven League, organized by PPI Eindhoven, is a <span class="highlight">sports tournament</span> hosted by the Indonesian Student Association in Eindhoven. <br><br>
+                      <a href="https://www.instagram.com/ppieindhoven/?hl=en" target="_blank">PPI Eindhoven</a>, short for "Perhimpunan Pelajar Indonesia Eindhoven" or the <span class="highlight">"Indonesian Student Association in Eindhoven"</span>, operates within a global network of Indonesian student associations across different cities. It provides a community and support system for Indonesian students studying in Eindhoven.
+                  </p>
+                  
+                    <div class="did">
+                        <h3>What I Did</h3>
 
-                         <div class="carousel-item">
-                            <div class="numbertext">2/
-                            <img src="./images/WhatsApp Image 2024-01-28 at 09.49.59_0749c21c.jpg" alt="final color pallete">
-                            </div>        
-                          </div>
+                        <div class="did_content">
+                            <p>
+                                My involvement in the <span class="highlight">Eindhoven League</span>, an annual sports competition organized by Indonesian students in Eindhoven, began as a personal project. In this capacity, I assumed the role of <span class="highlight">Social Media</span> coordinator, responsible for creating and posting content (both feed and Instagram stories) on the PPI Eindhoven Instagram account. To craft visually engaging posts, I utilized <span class="highlight">Adobe Illustrator</span> for illustration-based content and <span class="highlight">Canva</span> for adding textual elements.
+                            </p>
                         
-                        <div class="carousel-item">
-                          <div class="numbertext">3/
-                          <img src="./images/IMG_1861.PNG" alt="bunch of logos">
-                          </div>    
+                            <aside>
+                                <img src="./images/WhatsApp Image 2024-05-16 at 19.02.29_d8ca14ba.jpg">
+                                <figcaption>12/05/24 — Eindhoven League</figcaption>
+                            </aside>
                         </div>
 
-                        <div class="carousel-item">
-                          <div class="numbertext">4/
-                          <img src="./images/WhatsApp Image 2024-01-25 at 12.45.52_2d7804ec.jpg" alt="iteration logo 1">
-                          </div>    
-                        </div>
+                        <!-- <h4>Feedback</h4>
+                        <div class="did_content">
+                            <p>
 
-                        <div class="carousel-item">
-                          <div class="numbertext">5/
-                          <img src="./images/WhatsApp Image 2024-01-27 at 22.21.34_e4bfb925.jpg" alt="iteration logo 2">
-                          </div>    
-                        </div>
+                            </p>
 
-                        <div class="carousel-item">
-                          <div class="numbertext">6/
-                          <img src="./images/WhatsApp Image 2024-01-27 at 22.30.11_51d733ba.jpg" alt="iteration logo 3">
-                          </div>    
-                        </div>
+                            <aside>
 
-                        <div class="carousel-item">
-                          <div class="numbertext">7/
-                          <img src="./images/Screenshot 2024-02-04 204856.png" alt="Final logo">
-                          </div>    
-                        </div>
-
-                        <div class="carousel-item">
-                          <div class="numbertext">8/
-                          <img src="./images/Screenshot 2024-02-05 212938.png" alt="iteration post">
-                          </div>    
-                        </div>
-
-                        <div class="carousel-item">
-                          <div class="numbertext">9/
-                          <img src="./images/Screenshot 2024-02-06 151629.png" alt="final post">
-                          </div>    
-                        </div>
-
-                        <div class="carousel-item">
-                          <div class="numbertext">10/
-                          <img src="./images/Screenshot 2024-04-15 132107.png" alt="another post">
-                          </div>    
-                        </div>
-                            
+                            </aside>
+                        </div> -->
+                        
                     </div>
-                      
-                    
-                    <button class="prev" onclick="moveCarousel(-1)">❮</button>
-                    <button class="next" onclick="moveCarousel(1)">❯</button>
-                </div>
-                <br>
 
+                    <h3>Reflection</h3>
+                    <p>
+                      <span class="how">How it went</span>: My journey with the Eindhoven League project was both <span class="highlight">rewarding</span> and <span class="highlight">enlightening</span>. As the <span class="highlight">Social Media coordinator</span>, I encountered <span class="highlight">various challenges</span> and learned <span class="highlight">valuable lessons</span> along the way. Initially, navigating platforms like <span class="highlight">Adobe Illustrator</span> and <span class="highlight">Canva</span> posed some <span class="highlight">difficulties</span>, but through <span class="highlight">perseverance</span> and online tutorials, I quickly grasped the <span class="highlight">fundamentals</span> of <span class="highlight">graphic design</span>.<br><br>
+                      <span class="how">What I learned</span>: I learned how to <span class="highlight">manage</span> my <span class="highlight">time</span> better because this personal project stole quite a lot of my school time. I learned the <span class="highlight">importance</span> of <span class="highlight">effective communication</span> and <span class="highlight">visual storytelling</span> in <span class="highlight">social media management</span>. Moreover, <span class="highlight">collaborating</span> with <span class="highlight">team members</span> and receiving <span class="highlight">feedback</span> allowed me to <span class="highlight">refine</span> my <span class="highlight">skills</span> and explore new approaches to <span class="highlight">content creation</span>.<br><br>
+                      <span class="how">How it went</span>: Moving forward, I intend to <span class="highlight">apply</span> the <span class="highlight">lessons learned</span> from this project to <span class="highlight">future endeavors</span>. I plan to continue <span class="highlight">improving</span> my <span class="highlight">skills</span> in <span class="highlight">graphic design</span> and <span class="highlight">social media management</span>, seeking <span class="highlight">opportunities</span> to <span class="highlight">expand</span> my <span class="highlight">knowledge</span> and explore <span class="highlight">innovative techniques</span>. Additionally, I will prioritize <span class="highlight">clear communication</span> and <span class="highlight">collaboration</span> within <span class="highlight">teams</span>, recognizing the <span class="highlight">value</span> of <span class="highlight">collective efforts</span> in achieving <span class="highlight">successful outcomes</span>.
+                    </p>
+
+
+                    <!-- <h4>Links</h4>
+                    <div class="links">
+                        <a href="#">#</a>
+                    </div> -->
+                </section>
                 
-                <!-- <div class="Description">
-                  <div class="desc-text">
-                      <h3>Description</h3>
-                      <p>I joined an organization outside school</p>    
-                  </div>
-                    
-
-                  <aside>
-                      <h3>Links</h3>
-                      <a href="#">—</a>
-                      
-                  </aside>
-                </div> -->
-
-                
-            </div>
-
-            <div class="secondary-container">
-                <div class="Feedback">
-                    <header>Feedback</header> <br>
-                    <section>
-                        <!-- <h3>Feedback 1 — </h3> -->
-                        <p> —
-                        </p>
-                        
-                    </section>
-                </div>
-
-                <div class="Reflection">
-                    <header>Reflection</header> <br>
-                    <section>
-                        <p> I decided to join an organization outside school to broaden my skills and to put more content on my portfolio. <br><br>
-                          Eindhoven League is a yearly sport event in Eindhoven for Indonesian students. Usually Indonesian students from all over Netherlands participates on this events.
-                        </p>
-                    </section>
-                </div>
             </div>
         </main>
-
-
-
-
         <script>
-            let currentIndex = 0;
-
-            function moveCarousel(direction) {
-            const carousel = document.querySelector('.carousel');
-            const carouselWidth = carousel.clientWidth;
-            const numItems = carousel.children.length;
-
-            currentIndex = (currentIndex + direction + numItems) % numItems;
-            const offset = -currentIndex * carouselWidth;
-
-            carousel.style.transform = `translateX(${offset}px)`;
-            }
-
-            /*naavigation*/
 
             const dropdownContent = document.getElementById("dropdownContent");
 
