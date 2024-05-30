@@ -119,6 +119,11 @@ background-color: #f18ea4;
         overflow: hidden;  
     }
 
+    /* .container-food img{
+        display: flex;
+        background-color: red;
+        width: 1vw;
+    } */
     
     .curtain {
         width: 100%;
@@ -185,6 +190,7 @@ background-color: #f18ea4;
             top: -25%;
         }
     }
+
     .container .texts a {
         display: flex;
         position: absolute;
@@ -192,14 +198,35 @@ background-color: #f18ea4;
         font-size: 1vw;
     }
 
-    #LO1 {
+    #LO1, #LO2, #LO3, #LO4, #LO5 {
+        font-size: 1vw;
+    }
+
+    /*cakes*/
+    .images1 {
+        display: flex;
         position: absolute;
-        top: 27%;
+        top: 10%;
         left: 30%;
+    }
+
+     .images1 img {
+        width: 40%;
+     }
+
+    
+    #LO1 {
+        display: flex;
+        position: absolute;
+        top: 80%;
+        left: 2%;
         background-color: #f5bcc9;
         padding: 1em;
+        width: 30%;
         z-index: 1;
         color: black;
+        text-decoration: none;
+        justify-content: center;
     }
 
     #LO1:hover {
@@ -207,63 +234,115 @@ background-color: #f18ea4;
     }
 
 
-    #LO2 {
+    .images2 {
+        display: flex;
         position: absolute;
-        top: 27%;
-        left: 45%;
+        top: 15%;
+        left: 48%;
+    }
+
+     .images2 img {
+        width: 40%;
+     }
+
+    #LO2 {
+        display: flex;
+        position: absolute;
+        top: 92%;
+        left: -5%;
         background-color: #f5bcc9;
         padding: 1em;
         z-index: 1;
         color: black;
+        text-decoration: none;
     }
 
     #LO2:hover {
         background-color: #d3a2ad;
     }
 
-    #LO3 {
+    .images3 {
+        display: flex;
         position: absolute;
-        top: 27%;
+        top: 10%;
         left: 60%;
+    }
+
+     .images3 img {
+        width: 60%;
+     }
+
+    #LO3 {
+        display: flex;
+        position: absolute;
+        top: 75%;
+        left: 5%;
         background-color: #f5bcc9;
         padding: 1em;
         z-index: 1;
         color: black;
+        text-decoration: none;
     }
 
     #LO3:hover {
         background-color: #d3a2ad;
     }
 
+    .images4 {
+        display: flex;
+        position: absolute;
+        top: 40%;
+        left: 35%;
+    }
+
+     .images4 img {
+        width: 40%;
+     }
 
     #LO4 {
+        display: flex;
         position: absolute;
-        top: 57%;
-        left: 37%;
+        top: 80%;
+        left: 5%;
         background-color: #f5bcc9;
         padding: 1em;
         z-index: 1;
         color: black;
+        text-decoration: none;
     }
 
     #LO4:hover {
         background-color: #d3a2ad;
     }
 
+    .images5 {
+        display: flex;
+        position: absolute;
+        top: 40%;
+        left: 55%;
+    }
+
+     .images5 img {
+        width: 40%;
+     }
+
     #LO5 {
         position: absolute;
-        top: 57%;
-        left: 52.5%;
+        top: 80%;
+        left: 2%;
         background-color: #f5bcc9;
         padding: 1em;
         z-index: 1;
         color: black;
+        text-decoration: none;
     }
 
     #LO5:hover {
         background-color: #d3a2ad;
     }
 
+
+    
 
     
   /* Media query for responsive design (show burger menu on smaller screens) */
