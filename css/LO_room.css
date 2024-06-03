@@ -207,19 +207,19 @@ background-color: #f18ea4;
         display: flex;
         position: absolute;
         top: 10%;
-        left: 30%;
+        left: 28%;
     }
 
      .images1 img {
-        width: 40%;
+        width: 45%;
      }
 
     
     #LO1 {
         display: flex;
         position: absolute;
-        top: 80%;
-        left: 2%;
+        top: 65%;
+        left: 4%;
         background-color: #f5bcc9;
         padding: 1em;
         width: 30%;
@@ -227,6 +227,7 @@ background-color: #f18ea4;
         color: black;
         text-decoration: none;
         justify-content: center;
+        
     }
 
     #LO1:hover {
