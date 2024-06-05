@@ -8,9 +8,7 @@
     </head>
     <body>
         <nav>
-            <a href="patisserie.html" class="homelogo">
-                <img src="./images/Asset 5.png" class="homelogo"> 
-              </a>
+            <button id="backButton">&#8678;</button>
         
             <div class="dropdown">
                 <button onclick="toggleMenu()" class="dropbtn"> ☰ </button>
@@ -43,7 +41,7 @@
                 <section>
                     <h3>Description</h3>
                     <p>
-                        I made both low fidelity and high fidelity prototype for my portfolio so that I can test my ideas, gather some feedbacks and iterate my designs before start to implement them
+                        I made both low fidelity and high fidelity <a href="https://www.figma.com/design/Lrn9pBiNfpGMuepb7oTMVH/Portfolio?t=DOnTMIGWNkCljIt8-1" target="_blank">prototype</a>  for my portfolio so that I can test my ideas, gather some feedbacks and iterate my designs before start to implement them
                     </p>
 
                     <div class="did">
@@ -113,6 +111,14 @@
         </main>
 
         <script>
+            // Back Button
+                const backButton = document.getElementById('backButton');
+
+                // Add an event listener to the back button
+                backButton.addEventListener('click', function() {
+                    // Go back to the previous page
+                    window.history.back();
+                });
 
 
             const dropdownContent = document.getElementById("dropdownContent");

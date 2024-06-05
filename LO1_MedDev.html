@@ -8,9 +8,7 @@
     </head>
     <body>
         <nav>
-            <a href="patisserie.html" class="homelogo">
-                <img src="./images/Asset 5.png" class="homelogo"> 
-              </a>
+            <button id="backButton">&#8678;</button>
         
             <div class="dropdown">
                 <button onclick="toggleMenu()" class="dropbtn"> ☰ </button>
@@ -62,7 +60,9 @@
                         <div class="did_content">
                             <p>
                                 My part is to make the <span class="highlight">profile page</span> (Media Design). In the survey, I asked the respondents to pick which <span class="highlight">design and colors</span> they <span class="highlight">like the most</span> as well as asking them about how they think the <span class="highlight">content should be arranged</span> like. <br><br>
-                                I made several iterations on the page (ver1 is what we (our team) like, ver2 what teachers think should be, ver3/final is the modified version according to the answers of our target audience) <span class="highlight">*more detailed explanation in LO**</span>.
+                                I made several iterations on the page (ver1 is what we (our team) like, ver2 what teachers think should be, ver3/final is the modified version according to the answers of our target audience) <span class="highlight">*more detailed explanation in LO**</span>. <br><br>
+
+                                *Low images resolution, best to go to the <a href="https://www.figma.com/design/AAM85eXIAgtEA4kjhAMUHJ/Development?node-id=0%3A1&t=nP8XJS3uuH3CIGbR-1" target="_blank">Figma prototype</a>  directly!!*
                             </p>
 
                             <aside>
@@ -175,6 +175,15 @@
             </div>
         </main>
         <script>
+            
+            // Back Button
+                const backButton = document.getElementById('backButton');
+
+                // Add an event listener to the back button
+                backButton.addEventListener('click', function() {
+                    // Go back to the previous page
+                    window.history.back();
+                });
 
             const dropdownContent = document.getElementById("dropdownContent");
 

@@ -1,0 +1,126 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/LO_content.css">
+        <script src="script.js"></script>
+        <title>Project 3 Implementation - LO3</title>
+    </head>
+    <body>
+        <nav>
+            <a href="patisserie.html" class="homelogo">
+                <img src="./images/Asset 5.png" class="homelogo"> 
+              </a>
+        
+            <div class="dropdown">
+                <button onclick="toggleMenu()" class="dropbtn"> ☰ </button>
+                <div id="dropdownContent" class="dropdown-content">
+                    <div class="search-wrapper"> 
+                        <input type="text" class="input" id="mySearch" onkeyup="filterMenu()" placeholder="Search..." title="Type in a category">
+                    </div>
+                    <ul id="myMenu">
+                        <li class="has-submenu">
+                            <div>
+                                <a href="LO_room.html">Learning Outcomes</a>
+                                <ul class="submenu">
+                                    <li><a href="LO1.html">LO 1</a></li>
+                                        <ul>
+                                            <li><a href="LO1_MedDev.html">Media Development</a></li>
+                                        </ul>
+                                    <li><a href="LO2.html">LO 2</a></li>
+                                    <li><a href="LO3.html">LO 3</a></li>
+                                    <li><a href="LO4.html">LO 4</a></li>
+                                    <li><a href="LO5.html">LO 5</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>              
+        </nav>
+        <main>
+            <div class="main-container">
+                <header>
+                    Project 3 Website Development
+                </header>
+                <section>
+                    <h3>Description</h3>
+                    <p>
+                        For the third and last group project, we were asked to fix fontys ICT’s website and implement them. My teammates and I made <a href="LO3_P3MedDev.html" target="_blank">some iterations</a>  of <a href="LO1_MedDev.html" target="_blank">Figma prototype</a>  of our ideas on <a href="https://i522224.hera.fontysict.net/FontysWebDev/index.html" target="_blank">our version of fontys website</a>  before actually implementing them.
+                    </p>
+
+                    <div class="did">
+                        <h3>What I Did</h3>
+
+                        <div class="did_content">
+                            <p>
+                                I was tasked to make the profile page (media page), so after receiving  <a href="https://docs.google.com/document/d/1XAmOS1DuFbbAK4KB69Uhnzn66WNYS_fCV3_DnjuRd7o/edit?usp=sharing" target="_blank">answers from survey</a>  and did some iterations regarding the page, I started making the HTML CSS. Fortunately, my teammates already made the navigation and footer section, so I just needed to focu on making the profile page.
+                                <br><br>
+                                The responses from the survey really helped a lot because I didn’t need to think how I should organize the content since the respondents already told me what to do as well as which design I should make. 
+                                <br><br>
+                                The hardest part to make was making the carousel image for the job opportunity section. I did make something similar for my portfolio (previously) but the mechanic is a little bit different. Instead of showing the images one by one, I needed to show 3 images at once and when next/previous button is clicked, the carousel moves only the most left/right image. After the struggle, I finally succeeded to make it functional even though it’s a little bit different with the prototype but I did my best.
+                            </p>
+
+                            <!-- <aside>
+
+                            </aside> -->
+                        </div>
+
+                        <h4>Feedback (from client and peers)</h4>
+                        <div class="feedback">
+                            <p>
+
+                            </p>
+
+                            <aside>
+
+                            </aside>
+                        </div>
+                        
+                    </div>
+
+                    <h3>Reflection</h3>
+                    <p>
+
+                    </p>
+
+                    <h4>Links</h4>
+                    <div class="links">
+                        <a href="#">#</a>
+                    </div>
+                </section>
+                
+            </div>
+        </main>
+        <script>
+
+            const dropdownContent = document.getElementById("dropdownContent");
+
+            function toggleMenu() {
+            dropdownContent.classList.toggle("show");
+            }
+
+            function filterMenu() {
+            const input = document.getElementById("mySearch");
+            const filter = input.value.toUpperCase();
+            const ul = document.getElementById("myMenu");
+            const li = ul.getElementsByTagName("li");
+
+            for (let i = 0; i < li.length; i++) {
+                const a = li[i].getElementsByTagName("a")[0];
+                const txtValue = a.textContent || a.innerText; // Handle potential textContent issues
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+                } else {
+                li[i].style.display = "none";
+                }
+            }
+            }
+
+            // Initialize the dropdown to be hidden by default
+            window.onload = function() {
+            dropdownContent.classList.remove("show");
+            }
+        </script>
+    </body>
+</html>

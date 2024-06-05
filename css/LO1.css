@@ -17,10 +17,10 @@ body {
 header{
     display: flex;
     background-color: var(--2nd-color);
-    position: relative;
+    position: absolute;
     flex-direction: column;
     width: 20%;
-    top: 5%;
+    top: 10%;
     left: 39%;
     padding: 10px;
     border-radius: 10px;
@@ -74,6 +74,16 @@ nav ul {
     padding: 10px; 
 }
 
+/*button back*/
+#back {
+    top: 5%;
+    font-size: 4vw;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color:rgb(186, 106, 119);
+}
+
 .homelogo {
     display: flex;
     position: absolute;
@@ -103,7 +113,6 @@ background-color: #f18ea4;
     display: flex;
     position: absolute;
     left: 95%;
-    top: 5%;
     z-index: 3;
 }
 
@@ -225,3 +234,4 @@ background-color: #f18ea4;
     transform: scale(1.1); /* Expand to 110% size on hover */
     background-color: var(--4th-color);
 }
+

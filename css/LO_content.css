@@ -5,9 +5,16 @@
 }
 
 @font-face {
+    font-family: 'Purple Purse';
+    src: url('/fonts/PurplePurse-Regular.ttf');
+}
+
+@font-face {
     font-family: 'Young Serif';
     src: url('/fonts/YoungSerif-Regular.ttf');
 }
+
+
 :root {
     --1st-color: #FFF2EB;
     --2nd-color: #d7a0bd;
@@ -176,13 +183,14 @@ p a{
 
 
 header {
-    font-family: 'Young Serif';
+    font-family: 'Purple Purse';
     top: 0;
     display: flex;
     position: relative;
     justify-content: center;
     padding: 5px;
-    font-size: 2vw;
+    font-size: 2.5vw;
+    font-weight: 500;
 }
 
 section {
@@ -190,6 +198,8 @@ section {
     padding: 3em;
 }
 h3 {
+    /* font-family: 'Young Serif' ;
+    font-weight: 600; */
     margin-top: 1em;
 }
 p{
@@ -300,5 +310,14 @@ figcaption {
     color: #e314a8;
     font-weight: 600;
     text-decoration: underline;
+}
+
+/*button back*/
+#backButton {
+    font-size: 4vw;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color:rgb(186, 106, 119);
 }
 

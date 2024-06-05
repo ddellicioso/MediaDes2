@@ -8,9 +8,8 @@
     </head>
     <body>
         <nav>
-            <a href="patisserie.html" class="homelogo">
-                <img src="./images/Asset 5.png" class="homelogo"> 
-              </a>
+          
+          <a href="LO_room.html" id="back">&#8678;</a>
         
               <div class="dropdown">
                 <button onclick="toggleMenu()" class="dropbtn"> ☰ </button>
@@ -49,6 +48,7 @@
         </nav>
 
 
+
         <header>
           Learning Outcomes 1 <br><br>
           <p>Interactive Media products</p>
@@ -62,7 +62,7 @@
                 <a href="LO1_PBranding.html">
                     <img src="./images/strawberries/strawberry_cake1.png"> 
                     <p class="judul">Project 1 - Branding</p><br>
-                    <p class="desc">Description</p>    
+                    <p class="desc">Changing an old website into something better</p>    
                 </a>
             </div>
 
@@ -70,7 +70,7 @@
                 <a href="LO1_MedDev.html">
                     <img src="./images/strawberries/strawberry_pie.png">
                     <p class="judul">Project 3 - Media Development</p> <br>
-                    <p class="desc">Description</p>   
+                    <p class="desc">FIxing old dated Fontys website</p>   
                 </a>
             </div>
 
@@ -78,11 +78,17 @@
                 <a href="LO1_Portfolio.html">
                     <img src="./images/strawberries/strawberry_muffin.png">
                     <p class="judul">Portfolio</p> <br>
-                    <p class="desc">Description</p>    
+                    <p class="desc">First step making portfolio</p>    
                 </a>
             </div>
 
-            
+            <div class="sugar">
+                <a href="LO1_UXOverhaul.html">
+                    <img src="./images/strawberries/strawberry_cake2.png">
+                    <p class="judul">UX Overhaul</p> <br>
+                    <p class="desc">Good vs Bad UX design</p>   
+                </a>
+            </div>
 
             <!-- <div class="sugar">
                 <a href="#">
@@ -95,6 +101,16 @@
         </div>
 
         <script>
+
+          // // Back Button
+          // const backButton = document.getElementById('backButton');
+
+          // // Add an event listener to the back button
+          // backButton.addEventListener('click', function() {
+          //     // Go back to the previous page
+          //     window.history.back();
+          // });
+
             const dropdownContent = document.getElementById("dropdownContent");
 
             function toggleMenu() {

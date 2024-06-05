@@ -8,9 +8,7 @@
     </head>
     <body>
         <nav>
-            <a href="patisserie.html" class="homelogo">
-                <img src="./images/Asset 5.png" class="homelogo"> 
-              </a>
+            <button id="backButton">&#8678;</button>
         
             <div class="dropdown">
                 <button onclick="toggleMenu()" class="dropbtn"> ☰ </button>
@@ -52,15 +50,15 @@
                 </header>
                 <section>
                     <h3>Description</h3>
-                    <p> For this learning outcome we made a <a href="" target="_blank">Figma prototype</a>  to implement our ideas for the client's website.
-                        Before making this website, we specifically <a href="https://docs.google.com/document/d/1Lp-RUeVnZsLbFPG_pYhnN_c6ZGQocOTVHpMw_GXedxM/edit?usp=sharing" target="_blank">interviewed </a> our clients(Marianne and Cees) and made <a href="./pdf/Orchestra Members Survey.docx" target="_blank">surveys</a>  for our target audience (*more details in <a href="LO4_ClientInterview.html" target="_blank">Learning Outcome 4</a> *)
+                    <p> For this learning outcome we made a <a href="https://www.figma.com/design/3z0bGcvRpUufXUoCoOSQ6C/GMC_web?node-id=0-1&t=0v9HvgPcbS85nbGc-1" target="_blank">Figma prototype</a>  to implement our ideas for the client's website.
+                        Before making this website, we specifically <a href="https://docs.google.com/document/d/1Lp-RUeVnZsLbFPG_pYhnN_c6ZGQocOTVHpMw_GXedxM/edit?usp=sharing" target="_blank">interviewed </a> our clients(Marianne and Cees) and made <a href="" target="_blank">surveys</a>  for our target audience (*more details in <a href="LO4_ClientInterview.html" target="_blank">Learning Outcome 4</a> *)
                     </p>
 
                     <div class="did">
                         <h3>What I Did</h3>
 
                         <div class="did_content">
-                            <p> After we made sure about what our clients and target audience wants, I was assigned to make several pages such as, Agenda page, About Us page, New Talents page, and Percussion page.
+                            <p> I was assigned to make <span class="highlight">several pages</span>  such as, Agenda page, About Us page, New Talents page, and Percussion page.
                                 First of all I skimmed through the GMC's old website to see where the problem is, which part need fixings, while also discussing with my teammates. <br><br>
                                 I also made sure to use the <span class="highlight">same colors</span>  and <span class="highlight">match the theme</span> like our <a href="./pdf/brandguide_revised.pdf" target="_blank">brand guide</a>  as well as my teammates' designs. <br><br>
                                 The part that I really liked was about "New Talent" page. I thought that this page has a potential (the left side is the original GMC web and right side is my idea), <br>
@@ -127,6 +125,16 @@
         </main>
 
         <script>
+
+            // Back Button
+                const backButton = document.getElementById('backButton');
+
+                // Add an event listener to the back button
+                backButton.addEventListener('click', function() {
+                    // Go back to the previous page
+                    window.history.back();
+                });
+
 
             const dropdownContent = document.getElementById("dropdownContent");
 
