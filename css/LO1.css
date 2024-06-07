@@ -84,14 +84,6 @@ nav ul {
     color:rgb(186, 106, 119);
 }
 
-.homelogo {
-    display: flex;
-    position: absolute;
-    top: 5%;
-    z-index: 3;
-    width: 20%;
-}
-
 .dropbtn {
     background-color: pink;
     color: rgb(0, 0, 0);
@@ -171,7 +163,7 @@ background-color: #f18ea4;
     position: relative;
     align-items: center;
     width: 50%;
-    top: 15%;
+    top: 25%;
     left: 25%;
 }
 

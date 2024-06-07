@@ -1,0 +1,141 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/LO_content.css">
+        <script src="script.js"></script>
+        <title>Git - LO2</title>
+    </head>
+    <body>
+        <nav>
+            <a href="LO2.html" id="back">&#8678;</a>
+        
+            <div class="dropdown">
+                <button onclick="toggleMenu()" class="dropbtn"> ☰ </button>
+                <div id="dropdownContent" class="dropdown-content">
+                    <div class="search-wrapper"> 
+                        <input type="text" class="input" id="mySearch" onkeyup="filterMenu()" placeholder="Search..." title="Type in a category">
+                    </div>
+                    <ul id="myMenu">
+                        <li class="has-submenu">
+                            <div>
+                                <a href="LO_room.html">Learning Outcomes</a>
+                                <ul class="submenu">
+                                    <li><a href="LO1.html">LO 1</a></li>
+                                    <li><a href="LO2.html">LO 2</a></li>
+                                    <li><a href="LO3.html">LO 3</a></li>
+                                    <li><a href="LO4.html">LO 4</a></li>
+                                    <li><a href="LO5.html">LO 5</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>              
+        </nav>
+        <main>
+            <div class="main-container">
+                <header>
+                    Git
+                </header>
+                <section>
+                    <!-- <h3>Description</h3>
+                    <p>
+
+                    </p> -->
+
+                    <div class="did">
+                        <h3>What I Did</h3>
+
+                        <div class="mboh">
+                            <p>
+                                I used Git to document my projects, whether they are <span class="highlight">group projects</span>  or individual ones. By using Git commit messages, I create<span class="highlight">detailed</span>  history of changes made to my project, this serves as <span class="highlight">documentation</span>  for <span class="highlight">future reference</span> , making it easier for me or others to <span class="highlight">understand</span>  the <span class="highlight">project’s evolution</span> . 
+                            </p>
+
+                            <p>
+                                Git is also widely used <span class="highlight">skill</span>  in the software development industry. Learning Git not only <span class="highlight">improves</span>  my development <span class="highlight">practices</span>  but also my <span class="highlight">employability</span>  and <span class="highlight">career prospects</span> .
+                            </p>
+                            <aside id="gabung-pls">
+                                <div class="gabung">
+                                    <img src="./images/Screenshot 2024-06-07 172506.png"> 
+                                    <figcaption>Commit messages 2</figcaption>   
+                                </div>
+                                
+                                <div class="gabung">
+                                    <img src="./images/Screenshot 2024-06-07 172520.png">  
+                                    <figcaption>Commit messages 1</figcaption>  
+                                </div>
+                                
+                            </aside>
+                        </div>
+
+                        <!-- <h4>Feedback</h4>
+                        <div class="did_content">
+                            <p>
+
+                            </p>
+
+                            <aside>
+
+                            </aside>
+                        </div> -->
+                        
+                    </div>
+
+                    <h3>Reflection</h3>
+                    <p>
+                        <span class="how">How it went</span>: Using Git to document my projects has been a <span class="highlight">highly beneficial practice</span> . It provided a systematic way to <span class="highlight">track changes</span> , <span class="highlight">collaborate</span>  with team members, and maintain an <span class="highlight">organized</span>  history of project development. The process was initially challenging as I had to familiarize myself with various Git commands and workflows, but with <span class="highlight">consistent</span>  use, it became second nature. <br><br>
+                        <span class="how">what I learned</span>: Through this experience, I learned the importance of <span class="highlight">detailed commit</span>  messages. These messages not only serve as a log of changes but also help in understanding the rationale behind each modification. This practice has significantly <span class="highlight">improved</span>  my <span class="highlight">ability</span>  to backtrack and <span class="highlight">identify specific points</span>  in the <span class="highlight">project's history</span> . Additionally, I gained a <span class="highlight">deeper understanding</span>  of Git's branching and merging capabilities, which are <span class="highlight">crucial</span>  for managing different project features and <span class="highlight">avoiding conflicts</span> . <br><br>
+                        <span class="how">What will change</span>: Moving forward, I plan to <span class="highlight">commit</span>  more <span class="highlight">frequently</span>  to capture <span class="highlight">smaller changes</span> . This will <span class="highlight">provide</span>  a more granular history of the <span class="highlight">project’s evolution</span>  and make it <span class="highlight">easier</span>  to <span class="highlight">identify specific changes</span> . 
+                    </p>
+
+                    <h4>Links</h4>
+                    <div class="links">
+                        <a href="https://github.com/ddellicioso/MediaDes2">Portfolio Git</a>
+                        <a href="https://git.fhict.nl/I522224/undeveloped-stage">Project Development Git</a>
+                    </div>
+                </section>
+                
+            </div>
+        </main>
+        <script>
+            // // Back Button
+            //     const backButton = document.getElementById('backButton');
+
+            //     // Add an event listener to the back button
+            //     backButton.addEventListener('click', function() {
+            //         // Go back to the previous page
+            //         window.history.back();
+            //     });
+
+
+            const dropdownContent = document.getElementById("dropdownContent");
+
+            function toggleMenu() {
+            dropdownContent.classList.toggle("show");
+            }
+
+            function filterMenu() {
+            const input = document.getElementById("mySearch");
+            const filter = input.value.toUpperCase();
+            const ul = document.getElementById("myMenu");
+            const li = ul.getElementsByTagName("li");
+
+            for (let i = 0; i < li.length; i++) {
+                const a = li[i].getElementsByTagName("a")[0];
+                const txtValue = a.textContent || a.innerText; // Handle potential textContent issues
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+                } else {
+                li[i].style.display = "none";
+                }
+            }
+            }
+
+            // Initialize the dropdown to be hidden by default
+            window.onload = function() {
+            dropdownContent.classList.remove("show");
+            }
+        </script>
+    </body>
+</html>
