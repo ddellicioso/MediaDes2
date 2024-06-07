@@ -8,7 +8,7 @@
     </head>
     <body>
         <nav>
-            <a href="" id="back">&#8678;</a>
+            <a href="LO2.html" id="back">&#8678;</a>
 
         
             <div class="dropdown">
@@ -37,12 +37,12 @@
         <main>
             <div class="main-container">
                 <header>
-                    
+                    Fontys Web Carousel
                 </header>
                 <section>
                     <h3>Description</h3>
                     <p>
-
+                        As I mentioned in <a href="LO2_MedDev-implement.html" target="_blank">Project 3 implementation page</a>, I made a card/image carousel that’s a little bit different with I had in my portfolio (previously) for the third group project or Fontys’s website so I had to explicitly explain it here.
                     </p>
 
                     <div class="did">
@@ -50,35 +50,56 @@
 
                         <div class="did_content">
                             <p>
-
+                                Previously, I made a <a href="https://docs.google.com/document/d/1XAmOS1DuFbbAK4KB69Uhnzn66WNYS_fCV3_DnjuRd7o/edit?usp=sharing" target="_blank">survey</a>  about the <span class="highlight">designs</span>  of our <a href="https://www.figma.com/design/AAM85eXIAgtEA4kjhAMUHJ/Development?node-id=0-1&t=LYjHJkM2utqD1oNp-1" target="_blank">prototype</a> and spread it among people. One of the questions asked about how I should <span class="highlight">showcase</span>  the <span class="highlight">job opportunity</span>  especially in the profile page, and majority of people <span class="highlight">answered</span>  to make it a <span class="highlight">carousel</span> . 
                             </p>
 
                             <aside>
-
+                                <img src="./images/Screenshot 2024-06-07 182938.png">
+                                <figcaption>prototype vs finished product</figcaption>
                             </aside>
                         </div>
-
-                        <h4>Feedback</h4>
-                        <div class="did_content">
-                            <p>
-
-                            </p>
-
-                            <aside>
-
-                            </aside>
+                        <div class="feedback2">
+                            <div class="lurus">
+                                <p>
+                                    For this new carousel, I needed to make it <span class="highlight">moves one visible item at a time</span>  and <span class="highlight">shows multiple visible items</span>  (in this case 3 items) <span class="highlight">at once</span> .  Here’s what I understand from the previous portfolio carousel compared to Fontys website’s:
+                                </p>
+                                <p>
+                                    <ol>
+                                        <li>Index handling:</li>
+                                            <ul>
+                                                <li>First Implementation: Uses modular arithmetic to ensure the <span class="highlight">index</span> stays within bounds (<span class="highlight">currentIndex</span> = (<span class="highlight">currentIndex</span> + <span class="highlight">direction</span> + <span class="highlight">numItems</span>) % <span class="highlight">numItems</span>). This keeps the <span class="highlight">index</span> within the range of [0, <span class="highlight">numItems</span>-1].</li>
+                                                <li>Second Implementation: Adjusts the <span class="highlight">currentIndex</span> manually and considers the total number of <span class="highlight">visible items</span>. If the <span class="highlight">index</span> goes below 0, it sets it to the maximum possible starting <span class="highlight">index</span> for the last visible set of items (<span class="highlight">currentIndex</span> = <span class="highlight">totalItems</span> - <span class="highlight">visibleItems</span>). For moving right, it resets to 0 if it exceeds the bounds.</li>
+                                            </ul> <br>
+                                        <div id="feedback2">
+                                            <img src="./images/Screenshot 2024-06-05 191850.png">    
+                                        </div>    
+                                        
+                                        <li>CSS transform calculation:</li>
+                                            <ul>
+                                                <li>First Implementation: Calculates the <span class="highlight">offset</span> based on the total width of the <span class="highlight">carousel</span> and the current <span class="highlight">index</span>. This means the <span class="highlight">carousel</span> slides by the <span class="highlight">width</span> of one item at a time.</li>
+                                                <li>Second Implementation: Calculates the <span class="highlight">offset</span> based on a percentage of the total <span class="highlight">visible items</span>. This allows it to slide by the <span class="highlight">width</span> of multiple items at once if <span class="highlight">visibleItems</span> is more than 1.</li>
+                                            </ul>
+                                        <div id="feedback2">
+                                            <img src="./images/Screenshot 2024-06-05 193027.png">    
+                                        </div>
+                                    </ol>
+                                </p>    
+                            </div>
                         </div>
                         
                     </div>
 
                     <h3>Reflection</h3>
                     <p>
-
+                        <span class="how">How it went</span></span>: Working on the <span class="highlight">image carousel</span> for the Fontys website was a pretty cool experience. Before diving in, I did a <span class="highlight">survey</span> to gather opinions on how to display job opportunities on the profile page. Most people suggested using a <span class="highlight">carousel</span>, so I rolled with that idea. <br> For this new <span class="highlight">carousel</span>, I made it so that it moves one visible item at a time and shows three items at once. Comparing it to the previous <span class="highlight">carousel</span> in my portfolio, I noticed some key differences in how the <span class="highlight">index</span> was handled and how the <span class="highlight">CSS transform calculations</span> were done. <br><br>
+                        <span class="how">What I learned</span></span>: Getting direct feedback from users via <span class="highlight">survey</span> was super helpful. It guided the design choices and ensured the <span class="highlight">carousel</span> met user expectations. I also learned different ways to calculate <span class="highlight">CSS transforms</span>, which can be applied to create more dynamic and flexible <span class="highlight">carousels</span> in the future. <br><br>
+                        <span class="how">What will change</span></span>: I want to experiment with more advanced <span class="highlight">CSS</span> and <span class="highlight">JavaScript</span> techniques to make <span class="highlight">carousels</span> even smoother and more responsive. I’ll also continue to rely on <span class="highlight">user feedback</span> to guide design choices.
                     </p>
+                    
 
                     <h4>Links</h4>
                     <div class="links">
-                        <a href="#">#</a>
+                        <a href="https://i522224.hera.fontysict.net/FontysWebDev/index.html">Fontys Website link</a>
                     </div>
                 </section>
                 
