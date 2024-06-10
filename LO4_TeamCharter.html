@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/LO_content.css">
+        <script src="script.js"></script>
+        <title>Team Charter - LO4</title>
+    </head>
+    <body>
+        <nav>
+            <a href="LO4.html" id="back">&#8678;</a>
+
+        
+            <div class="dropdown">
+                <button onclick="toggleMenu()" class="dropbtn"> ☰ </button>
+                <div id="dropdownContent" class="dropdown-content">
+                    <div class="search-wrapper"> 
+                        <input type="text" class="input" id="mySearch" onkeyup="filterMenu()" placeholder="Search..." title="Type in a category">
+                    </div>
+                    <ul id="myMenu">
+                        <li class="has-submenu">
+                            <div>
+                                <a href="LO_room.html">Learning Outcomes</a>
+                                <ul class="submenu">
+                                    <li><a href="LO1.html">LO 1</a></li>
+                                    <li><a href="LO2.html">LO 2</a></li>
+                                    <li><a href="LO3.html">LO 3</a></li>
+                                    <li><a href="LO4.html">LO 4</a></li>
+                                    <li><a href="LO5.html">LO 5</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>              
+        </nav>
+        <main>
+            <div class="main-container">
+                <header>
+                    Team Charter
+                </header>
+                <section>
+                    <h3>Description</h3>
+                    <p>
+                        Every time we had a new group project, my teammates and I would always make a <span class="highlight">team charter</span> to clarify the project’s <span class="highlight">objectives and goals</span>, making sure all team members are <span class="highlight">aligned and committed</span>. This alignment provides a clear <span class="highlight">roadmap</span> for what the team aims to achieve, maintaining <span class="highlight">focus</span> and <span class="highlight">direction</span> throughout the project. We define our <span class="highlight">roles and responsibilities</span> within the charter to promote <span class="highlight">accountability</span> and <span class="highlight">efficiency</span>. By outlining the specific duties of each team member, the charter helps everyone remain accountable and ensures tasks are allocated appropriately, reducing <span class="highlight">duplication of effort</span>. This clarity in roles contributes to a more <span class="highlight">organized</span> and <span class="highlight">productive</span> team environment.
+                    </p>
+                    
+                    <h3>Reflection</h3>
+                    <p>
+                        <span class="how">How it went</span>: Overall, the process went <span class="highlight">smoothly</span> and had a positive impact on our projects. The team charter served as a <span class="highlight">reference point</span> whenever we faced <span class="highlight">uncertainties or conflicts</span>. It was reassuring to know that we had a structured plan and clear roles, which kept us on track and minimized <span class="highlight">confusion</span>. However, sometimes it was challenging to get everyone to agree on the roles and responsibilities, but once we did, it made everything much more manageable.
+                        <br><br>
+                        <span class="how">What I learned</span>: Creating a team charter taught me the importance of setting clear <span class="highlight">goals</span> and <span class="highlight">expectations</span> from the beginning. It helped us avoid <span class="highlight">misunderstandings</span> and ensured everyone was on the same page. I also learned that defining roles and responsibilities is crucial for <span class="highlight">accountability</span> and <span class="highlight">efficiency</span>. It made us all more aware of our tasks and responsibilities, which led to better <span class="highlight">teamwork</span> and <span class="highlight">productivity</span>.
+                        <br><br>
+                        <span class="how">What will change</span>: In future projects, I'll continue to use a team charter, but I'll also focus on improving how we define roles and ensure everyone feels comfortable and agrees with their assigned tasks. This way, we can make the process even more <span class="highlight">efficient</span> and <span class="highlight">collaborative</span>.
+                    </p>
+                    
+
+
+                    <h4>Links</h4>
+                    <div class="links">
+                        <a href="pdf/team-charter-branding.pdf" target="_blank">Team Charter 1</a>
+                        <a href="https://docs.google.com/document/d/1JCAFA3LadxA6Q1Hx4VXxSMvN9kgsurzddpyzOpY6NkE/edit?usp=sharing" target="_blank">Team Charter 2</a>
+                    </div>
+                </section>
+                
+            </div>
+        </main>
+        <script>
+
+            const dropdownContent = document.getElementById("dropdownContent");
+
+            function toggleMenu() {
+            dropdownContent.classList.toggle("show");
+            }
+
+            function filterMenu() {
+            const input = document.getElementById("mySearch");
+            const filter = input.value.toUpperCase();
+            const ul = document.getElementById("myMenu");
+            const li = ul.getElementsByTagName("li");
+
+            for (let i = 0; i < li.length; i++) {
+                const a = li[i].getElementsByTagName("a")[0];
+                const txtValue = a.textContent || a.innerText; // Handle potential textContent issues
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+                } else {
+                li[i].style.display = "none";
+                }
+            }
+            }
+
+            // Initialize the dropdown to be hidden by default
+            window.onload = function() {
+            dropdownContent.classList.remove("show");
+            }
+        </script>
+    </body>
+</html>

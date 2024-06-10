@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/LO_content.css">
+        <script src="script.js"></script>
+        <title>Sprint X Survey - LO4</title>
+    </head>
+    <body>
+        <nav>
+            <a href="LO4.html" id="back">&#8678;</a>
+        
+            <div class="dropdown">
+                <button onclick="toggleMenu()" class="dropbtn"> ☰ </button>
+                <div id="dropdownContent" class="dropdown-content">
+                    <div class="search-wrapper"> 
+                        <input type="text" class="input" id="mySearch" onkeyup="filterMenu()" placeholder="Search..." title="Type in a category">
+                    </div>
+                    <ul id="myMenu">
+                        <li class="has-submenu">
+                            <div>
+                                <a href="LO_room.html">Learning Outcomes</a>
+                                <ul class="submenu">
+                                    <li><a href="LO1.html">LO 1</a></li>
+                                    <li><a href="LO2.html">LO 2</a></li>
+                                    <li><a href="LO3.html">LO 3</a></li>
+                                    <li><a href="LO4.html">LO 4</a></li>
+                                    <li><a href="LO5.html">LO 5</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>              
+        </nav>
+        <main>
+            <div class="main-container">
+                <header>
+                    Sprint X : Survey
+                </header>
+                <section>
+                    <h3>Description</h3>
+                    <p>
+                        I made the <a href="https://docs.google.com/document/d/1cuYoqFUJBwe5WSyxGKiWfTO2WB9_LM4B8t_zZkniyOo/edit?usp=sharing" target="_blank">survey</a> to receive some insights on how I should design my <span class="highlight">scary character</span>. I explicitly spread the survey among <span class="highlight">Indonesian people</span> to gain <span class="highlight">authentic answers</span> and <span class="highlight">vision</span>.
+                    </p>
+                    
+                    <div class="did">
+                        <h3>What I Did</h3>
+                    
+                        <div class="did_content">
+                            <p>
+                                My first step was <span class="highlight">browsing</span> through the internet to look at some <span class="highlight">references</span> on how <span class="highlight">Pocong</span> (the scary character) is supposed to look. I watched some (supposedly) <span class="highlight">“found” footage</span> of Pocong to get an idea of their <span class="highlight">behavior</span> and where they are usually <span class="highlight">found</span>. After that, I started making the <span class="highlight">questions</span> to be put in the survey.
+                                <br><br>
+                                The questions included the <span class="highlight">design</span> of its appearance (<span class="highlight">eyes</span>, <span class="highlight">skin color</span>, <span class="highlight">shroud condition</span>, etc.), their <span class="highlight">body posture</span>, and the <span class="highlight">background</span> (their location). I shared the survey with all of my Indonesian friends.
+                                <br><br>
+                                The result of the survey was more or less the same as what I expected. Even though I got fewer responses than my goal, the <span class="highlight">answers</span> were still very <span class="highlight">helpful</span> for my design choices.
+                            </p>
+                    
+                            <aside>
+                                <img src="./images/Screenshot 2024-06-10 105901.png">
+                                <figcaption>Survey</figcaption>
+                            </aside>
+                        </div>
+                    </div>
+                    
+                    <h3>Reflection</h3>
+                    <p>
+                        <span class="how">How it went</span>: The process of creating and distributing the survey to gain insights on designing the scary character, Pocong, went relatively well. Initially, I conducted thorough <span class="highlight">research</span> by browsing various references and watching supposed “found” footage to understand Pocong's typical <span class="highlight">appearance</span> and <span class="highlight">behavior</span>. This research phase was crucial in forming the basis of the survey questions, which focused on various aspects of the character's design such as <span class="highlight">eyes</span>, <span class="highlight">skin color</span>, <span class="highlight">shroud condition</span>, <span class="highlight">body posture</span>, and typical <span class="highlight">locations</span>.
+                        <br><br>
+                        After drafting the questions, I distributed the survey among my <span class="highlight">Indonesian friends</span> to ensure the feedback was <span class="highlight">authentic</span> and <span class="highlight">culturally relevant</span>. While the number of responses was lower than anticipated, the quality of the responses was high and provided valuable insights that aligned closely with my initial expectations.
+                        <br><br>
+                        <span class="how">What I learned</span>: The initial research phase was important in creating relevant and specific survey questions. Understanding the <span class="highlight">cultural context</span> and typical features of Pocong helped in formulating questions that would yield useful insights. Ensuring that the survey was spread among <span class="highlight">Indonesian people</span> was crucial for obtaining authentic and culturally relevant feedback. This reinforced the importance of understanding and respecting <span class="highlight">cultural contexts</span> in design projects.
+                        <br><br>
+                        <span class="how">What will change</span>: While maintaining a focus on cultural relevance, I will also consider expanding the demographic scope to include different <span class="highlight">age groups</span>, <span class="highlight">regions</span>, and <span class="highlight">backgrounds</span> within Indonesia to gain a more comprehensive understanding of perceptions about Pocong.
+                    </p>
+                    
+
+                    <h4>Links</h4>
+                    <div class="links">
+                        <a href="https://docs.google.com/document/d/1cuYoqFUJBwe5WSyxGKiWfTO2WB9_LM4B8t_zZkniyOo/edit?usp=sharing" target="_blank">Survey Conclusion</a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSePYWJhCVH3ACa_BmlxIW_dJog39tJ2wRPkCO6r3PBJLELdiA/viewform?usp=sharing" target="_blank">Raw Survey</a>
+                    </div>
+                </section>
+                
+            </div>
+        </main>
+        <script>
+
+            const dropdownContent = document.getElementById("dropdownContent");
+
+            function toggleMenu() {
+            dropdownContent.classList.toggle("show");
+            }
+
+            function filterMenu() {
+            const input = document.getElementById("mySearch");
+            const filter = input.value.toUpperCase();
+            const ul = document.getElementById("myMenu");
+            const li = ul.getElementsByTagName("li");
+
+            for (let i = 0; i < li.length; i++) {
+                const a = li[i].getElementsByTagName("a")[0];
+                const txtValue = a.textContent || a.innerText; // Handle potential textContent issues
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+                } else {
+                li[i].style.display = "none";
+                }
+            }
+            }
+
+            // Initialize the dropdown to be hidden by default
+            window.onload = function() {
+            dropdownContent.classList.remove("show");
+            }
+        </script>
+    </body>
+</html>
