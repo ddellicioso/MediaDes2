@@ -1,0 +1,125 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/LO_content.css">
+        <script src="script.js"></script>
+        <title>Orchestra Member Survey - LO4</title>
+    </head>
+    <body>
+        <nav>
+            <a href="LO4.html" id="back">&#8678;</a>
+
+        
+            <div class="dropdown">
+                <button onclick="toggleMenu()" class="dropbtn"> ☰ </button>
+                <div id="dropdownContent" class="dropdown-content">
+                    <div class="search-wrapper"> 
+                        <input type="text" class="input" id="mySearch" onkeyup="filterMenu()" placeholder="Search..." title="Type in a category">
+                    </div>
+                    <ul id="myMenu">
+                        <li class="has-submenu">
+                            <div>
+                                <a href="LO_room.html">Learning Outcomes</a>
+                                <ul class="submenu">
+                                    <li><a href="LO1.html">LO 1</a></li>
+                                    <li><a href="LO2.html">LO 2</a></li>
+                                    <li><a href="LO3.html">LO 3</a></li>
+                                    <li><a href="LO4.html">LO 4</a></li>
+                                    <li><a href="LO5.html">LO 5</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>              
+        </nav>
+        <main>
+            <div class="main-container">
+                <header>
+                    Project 1 : Orchestra Member Survey
+                </header>
+                <section>
+                    <h3>Description</h3>
+                    <p>
+                        This <a href="https://docs.google.com/document/d/1vYHjLSNLY6X7xbiKJWUjEGip0aiepcFSWzcmu9Jep1A/edit?usp=sharing" target="_blank">survey</a> is conducted to dig deeper into what makes people join <span class="highlight">orchestra</span> and what keeps them there. I covered stuff like how they found out about orchestras, when they started playing, why they love it, and where they get their info. Plus, I wanted to know how <span class="highlight">social media</span> and parents play into it all.
+                    </p>
+
+                    <div class="did">
+                        <h3>What I Did</h3>
+
+                        <div class="did_content">
+                            <p>
+                                I put together this <span class="highlight">survey</span> with questions covering everything from how people first <span class="highlight">heard about orchestras</span> to why they decided to join. To keep things simple, I offered <span class="highlight">multiple-choice options</span> and showed percentages to make it <span class="highlight">easy to understand</span> . The survey covered a wide range of topics, including when people <span class="highlight">started playing</span>, what they <span class="highlight">love most</span>  about being in an <span class="highlight">orchestra</span>, and where they get their <span class="highlight">info about music events</span>. I aimed to make the survey fun and easy to fill out to encourage more participation.
+                                <br><br>
+                                Overall, I got some really cool insights from the survey. It was interesting to see how <span class="highlight">many people</span>  find out about orchestras through <span class="highlight">social media</span> these days, and how much their <span class="highlight">parents influence</span> their musical journey. Now that I have all this data, I can start figuring out ways to make orchestra life even better for everyone involved. Maybe I'll focus more on social media outreach or find ways to make orchestras more family-friendly.
+                                <br><br>
+                                Since the majority of people found out about the orchestra through social media, I relayed the data to my teammates; and from these <span class="highlight">data</span> I acquired, my team was able to make couple of products, such as <span class="highlight">social media planning</span>, <span class="highlight">posters</span>, and a better <span class="highlight">website</span> *You can see the prototype in <a href="LO1_PBranding.html" target="_blank"><span class="highlight">LO 1 here</span></a> *.
+                            </p>
+                       
+                            <!-- <aside>
+
+                            </aside> -->
+                        </div>
+
+                        <!-- <h4>Feedback</h4>
+                        <div class="did_content">
+                            <p>
+
+                            </p>
+
+                            <aside>
+
+                            </aside>
+                        </div> -->
+                        
+                    </div>
+
+                    <h3>Reflection</h3>
+                    <p>
+                        <span class="how">How it went</span>: The <span class="highlight">survey</span> went really well overall. I received good response rate and gathered a lot of <span class="highlight">valuable insights</span>  into <span class="highlight">orchestra membership</span>. The survey gave a deep understanding of <span class="highlight">how people find out</span>  about orchestras, when they start <span class="highlight">getting into</span>  music, what they <span class="highlight">love</span>  most about being part of an orchestra, and what keeps them coming back for more. <br><br>
+                        <span class="how">What I learned</span>: I learned about how significant <span class="highlight">social media</span> has become in people’s discovery of orchestras. It’s clear that platforms like <span class="highlight">Facebook</span> and <span class="highlight">Instagram</span> play a big role in reaching potential members. Additionally, it was eye-opening to see the strong influence <span class="highlight">parents</span> have on their children's musical journeys. <br><br>
+                        <span class="how">What will change</span>: I'll likely put more focus on <span class="highlight">social media outreach</span>, maybe even investing in <span class="highlight">targeted ads</span> or partnering with <span class="highlight">influencers</span>. Additionally, I want to explore ways to better involve <span class="highlight">parents</span> in the orchestra community, perhaps by <span class="highlight">offering special events</span>  or resources tailored to them.
+                    </p>
+
+                    <h4>Links</h4>
+                    <div class="links">
+                        <a href="https://docs.google.com/document/d/1vYHjLSNLY6X7xbiKJWUjEGip0aiepcFSWzcmu9Jep1A/edit?usp=sharing" target="_blank">Survey Conclusion</a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScJ1uyASPtcC29OVTZyeB8kOn8xAcHWhvTzIhiJx-TfE4hVQw/viewform?usp=sharing" target="_blank">Raw Survey (in Dutch)</a>
+                    </div>
+                </section>
+                
+            </div>
+        </main>
+        <script>
+
+            const dropdownContent = document.getElementById("dropdownContent");
+
+            function toggleMenu() {
+            dropdownContent.classList.toggle("show");
+            }
+
+            function filterMenu() {
+            const input = document.getElementById("mySearch");
+            const filter = input.value.toUpperCase();
+            const ul = document.getElementById("myMenu");
+            const li = ul.getElementsByTagName("li");
+
+            for (let i = 0; i < li.length; i++) {
+                const a = li[i].getElementsByTagName("a")[0];
+                const txtValue = a.textContent || a.innerText; // Handle potential textContent issues
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+                } else {
+                li[i].style.display = "none";
+                }
+            }
+            }
+
+            // Initialize the dropdown to be hidden by default
+            window.onload = function() {
+            dropdownContent.classList.remove("show");
+            }
+        </script>
+    </body>
+</html>
