@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/LO_content.css">
+        <script src="script.js"></script>
+        <title>Feedback - LO5</title>
+    </head>
+    <body>
+        <nav>
+            <a href="LO5.html" id="back">&#8678;</a>
+
+        
+            <div class="dropdown">
+                <button onclick="toggleMenu()" class="dropbtn"> ☰ </button>
+                <div id="dropdownContent" class="dropdown-content">
+                    <div class="search-wrapper"> 
+                        <input type="text" class="input" id="mySearch" onkeyup="filterMenu()" placeholder="Search..." title="Type in a category">
+                    </div>
+                    <ul id="myMenu">
+                        <li class="has-submenu">
+                            <div>
+                                <a href="LO_room.html">Learning Outcomes</a>
+                                <ul class="submenu">
+                                    <li><a href="LO1.html">LO 1</a></li>
+                                    <li><a href="LO2.html">LO 2</a></li>
+                                    <li><a href="LO3.html">LO 3</a></li>
+                                    <li><a href="LO4.html">LO 4</a></li>
+                                    <li><a href="LO5.html">LO 5</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>              
+        </nav>
+        <main>
+            <div class="main-container">
+                <header>
+                  Asking Feedbacks
+                </header>
+                <section>
+                    <h3>Description</h3>
+                    <div class="mboh">
+                      <p>
+                        Asking for <span class="highlight">feedback</span> is really helpful for both <span class="highlight">personal</span> and <span class="highlight">professional</span> growth. It shows I’m doing well and where I can get better, giving me useful tips to improve. <span class="highlight">Feedback</span> make me able to see things from different perspectives and also help me spot any <span class="highlight">blind spots</span>, especially about my <span class="highlight">designs</span>. Positive <span class="highlight">feedback</span> can boost my confidence and motivation, while <span class="highlight">constructive feedback</span> helps me develop and make better decisions. It helps me keep improving my <span class="highlight">work quality</span> can prevent conflicts by promoting transparency.
+                    </p> 
+                    
+
+                      <aside id="kegedean">
+                        <img src="./images/Screenshot 2024-06-11 180540.png">
+                        <figcaption>Feedpulse</figcaption>
+                      </aside>
+                      
+                    </div>
+                    
+                   
+                    <h3>Reflection</h3>
+                    <p>
+                      <span class="how">What I learned</span>: Through asking for <span class="highlight">feedback</span>, I’ve realized how crucial it is for my personal and professional development. I learned that <span class="highlight">feedback</span> provides a clear picture of my strengths and areas for improvement, offering valuable insights that I might miss otherwise. Positive <span class="highlight">feedback</span> boosts my confidence and motivation, making me more eager to tackle challenges. On the other hand, <span class="highlight">constructive feedback</span> helps me identify specific areas to develop, leading to better decision-making and continuous improvement in the quality of my work. Additionally, I’ve understood that seeking <span class="highlight">feedback</span> can prevent potential conflicts by fostering transparency and open communication. <br><br>
+                      All of the <span class="highlight">feedbacks</span> I received always provided benefits for me, for example for my portfolio and designs I made. By asking <span class="highlight">feedbacks</span>, I was able to iterate my designs until it’s perfect. More detailed examples are in <a href="LO3.html" target="_blank">Learning Outcome 3</a>!
+                      <br><br>
+                      <span class="how">Future Actions</span>: Moving forward, I will make it a habit to regularly seek <span class="highlight">feedback</span> from colleagues, mentors, and peers. I will actively listen to both positive and <span class="highlight">constructive comments</span>, using them to guide my growth and development. I plan to implement the actionable insights I receive to enhance my skills and performance continually.
+                  </p>
+                  
+
+
+                    <!-- <h4>Links</h4>
+                    <div class="links">
+                        <a href="#">#</a>
+                    </div> -->
+                </section>
+                
+            </div>
+        </main>
+        <script>
+
+            const dropdownContent = document.getElementById("dropdownContent");
+
+            function toggleMenu() {
+            dropdownContent.classList.toggle("show");
+            }
+
+            function filterMenu() {
+            const input = document.getElementById("mySearch");
+            const filter = input.value.toUpperCase();
+            const ul = document.getElementById("myMenu");
+            const li = ul.getElementsByTagName("li");
+
+            for (let i = 0; i < li.length; i++) {
+                const a = li[i].getElementsByTagName("a")[0];
+                const txtValue = a.textContent || a.innerText; // Handle potential textContent issues
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+                } else {
+                li[i].style.display = "none";
+                }
+            }
+            }
+
+            // Initialize the dropdown to be hidden by default
+            window.onload = function() {
+            dropdownContent.classList.remove("show");
+            }
+        </script>
+    </body>
+</html>

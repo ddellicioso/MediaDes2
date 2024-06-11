@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/LO_content.css">
+        <script src="script.js"></script>
+        <title>Planner - LO5</title>
+    </head>
+    <body>
+        <nav>
+            <a href="LO5.html" id="back">&#8678;</a>
+
+        
+            <div class="dropdown">
+                <button onclick="toggleMenu()" class="dropbtn"> ☰ </button>
+                <div id="dropdownContent" class="dropdown-content">
+                    <div class="search-wrapper"> 
+                        <input type="text" class="input" id="mySearch" onkeyup="filterMenu()" placeholder="Search..." title="Type in a category">
+                    </div>
+                    <ul id="myMenu">
+                        <li class="has-submenu">
+                            <div>
+                                <a href="LO_room.html">Learning Outcomes</a>
+                                <ul class="submenu">
+                                    <li><a href="LO1.html">LO 1</a></li>
+                                    <li><a href="LO2.html">LO 2</a></li>
+                                    <li><a href="LO3.html">LO 3</a></li>
+                                    <li><a href="LO4.html">LO 4</a></li>
+                                    <li><a href="LO5.html">LO 5</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>              
+        </nav>
+        <main>
+            <div class="main-container">
+                <header>
+                    Individual Planner
+                </header>
+                <section>
+                    <h3>Description</h3>
+                    <p>
+                        <span class="highlight">Notion</span> is an <span class="highlight">all-in-one workspace app</span> and <span class="highlight">productivity tool</span> that allows us to <span class="highlight">create</span>, <span class="highlight">organize</span>, and <span class="highlight">collaborate</span> on various types of content and projects. It combines the functionality of several tools, such as <span class="highlight">note-taking apps</span>, <span class="highlight">task managers</span>, <span class="highlight">wikis</span>, <span class="highlight">databases</span>, and <span class="highlight">project management software</span>, into a single platform. <span class="highlight">Notion</span>, as a tool, helps me work on my <span class="highlight">individual planning</span> and <span class="highlight">personal management</span>.
+                    </p>
+                    
+
+                    <div class="did">
+                        <h3>What I Did</h3>
+
+                        <div class="mboh">
+                            <p>
+                                I found <span class="highlight">Notion</span> very helpful as my personal tracker apps, especially for school work, because I’m able to design my planner to include <span class="highlight">to-do lists</span>, <span class="highlight">calendars</span>, <span class="highlight">goal trackers</span>, etc., and it really helped me to be more <span class="highlight">productive</span>, <span class="highlight">focused</span>, and <span class="highlight">organized</span>.
+                                <br><br>
+                                I used <span class="highlight">to-do lists</span> to keep track of all tasks I need to complete; I also used a “timeline” <span class="highlight">calendar</span> to see the <span class="highlight">chronological order</span> of events and tasks in a clear manner. This kind of management helps me manage my time more <span class="highlight">effectively</span>  by <span class="highlight">visualizing the duration</span>  and overlapping of events and tasks, and it enables me to <span class="highlight">identify potential scheduling conflicts</span>  or gaps and adjust my plans accordingly.
+                            </p>
+                            
+                            
+
+                            <aside id="kegedean">
+                                <img src="./images/Screenshot 2024-06-11 183527.png">
+                                <figcaption>Notion calendar</figcaption>
+
+                            </aside>
+                        </div>
+
+                        
+                    </div>
+
+                    <h3>Reflection</h3>
+                    <p>
+                        <span class="how">What I learned</span>: My experience with <span class="highlight">Notion</span> for managing school stuff has been a game-changer. Using features like <span class="highlight">to-do lists</span> and the "timeline" <span class="highlight">calendar view</span>, I've become way more <span class="highlight">organized</span> and <span class="highlight">focused</span>. <span class="highlight">Notion</span>'s to-do lists are a lifesaver for keeping track of everything I need to do. They help me prioritize and stay on top of my workload. Plus, the "timeline" view makes it easy to see what's coming up and when. It's like having a visual roadmap for my tasks and events. <span class="highlight">Notion</span>'s flexibility lets me customize my workspace to fit my needs perfectly, making it even easier to stay organized.  <br><br>
+                        <span class="how">Future actions</span>: In the future, I want to explore more of <span class="highlight">Notion</span>'s features, fine-tune my <span class="highlight">time management</span> with the "timeline" view, and keep tweaking my planner layout for maximum efficiency. With <span class="highlight">Notion</span>'s help, I know I can keep improving my productivity and focus, not just for school, but in everything I do.
+                    </p>
+                    
+
+                    <!-- <h4>Links</h4>
+                    <div class="links">
+                        <a href="#">#</a>
+                    </div> -->
+                </section>
+                
+            </div>
+        </main>
+        <script>
+
+            const dropdownContent = document.getElementById("dropdownContent");
+
+            function toggleMenu() {
+            dropdownContent.classList.toggle("show");
+            }
+
+            function filterMenu() {
+            const input = document.getElementById("mySearch");
+            const filter = input.value.toUpperCase();
+            const ul = document.getElementById("myMenu");
+            const li = ul.getElementsByTagName("li");
+
+            for (let i = 0; i < li.length; i++) {
+                const a = li[i].getElementsByTagName("a")[0];
+                const txtValue = a.textContent || a.innerText; // Handle potential textContent issues
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+                } else {
+                li[i].style.display = "none";
+                }
+            }
+            }
+
+            // Initialize the dropdown to be hidden by default
+            window.onload = function() {
+            dropdownContent.classList.remove("show");
+            }
+        </script>
+    </body>
+</html>

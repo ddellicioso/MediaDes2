@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/LO_content.css">
+        <script src="script.js"></script>
+        <title>Professional Tools - LO5</title>
+    </head>
+    <body>
+        <nav>
+            <a href="LO5.html" id="back">&#8678;</a>
+
+        
+            <div class="dropdown">
+                <button onclick="toggleMenu()" class="dropbtn"> ☰ </button>
+                <div id="dropdownContent" class="dropdown-content">
+                    <div class="search-wrapper"> 
+                        <input type="text" class="input" id="mySearch" onkeyup="filterMenu()" placeholder="Search..." title="Type in a category">
+                    </div>
+                    <ul id="myMenu">
+                        <li class="has-submenu">
+                            <div>
+                                <a href="LO_room.html">Learning Outcomes</a>
+                                <ul class="submenu">
+                                    <li><a href="LO1.html">LO 1</a></li>
+                                    <li><a href="LO2.html">LO 2</a></li>
+                                    <li><a href="LO3.html">LO 3</a></li>
+                                    <li><a href="LO4.html">LO 4</a></li>
+                                    <li><a href="LO5.html">LO 5</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>              
+        </nav>
+        <main>
+            <div class="main-container">
+                <header>
+                    Professional Tools
+                </header>
+                <section>
+                    <div class="did">
+                        <h3>What I Did</h3>
+
+                        <div class="did_content">
+                            <p>
+                                Using professional tools for specially designing is essential for several reasons. I used <span class="highlight">Adobe Creative Cloud tools</span>, as recommended by the teachers, to help me enhance my skills as well as my professional credibility.<br> So far, I have managed to learn and use <span class="highlight">Illustrator</span> and <span class="highlight">InDesign</span> for my projects. <br>
+                                *Links below are where I used these professional tools*
+                                <br><br>
+                                Proficiency in these professional tools also <span class="highlight">improves job opportunities</span> , as many employers and clients specifically seek knowledge of <span class="highlight">Adobe software</span>. Overall, using professional tools ensures <span class="highlight">consistency and high quality</span>  in my work, helping me stay <span class="highlight">competitive</span>  in the design industry.
+                            </p>
+                            
+
+                            <aside>
+                                <img src="./images/Screenshot (213).png">
+                                <figcaption>Adobe Illustrator</figcaption>
+                                <br>
+
+                                <img src="./images/Screenshot (209).png">
+                                <figcaption>Adobe Photoshop</figcaption>
+                                <br>
+
+                                <img src="./images/Screenshot 2024-03-19 141547.png">
+                                <figcaption>Adobe InDesign</figcaption>
+                            </aside>
+                        </div>
+
+                    </div>
+
+                    <h3>Reflection</h3>
+                    <p>
+                        <span class="how">What I learned</span>: Using <span class="highlight">professional tools</span> like <span class="highlight">Adobe Creative Cloud</span> has been an essential part of my growth as a designer. Through the guidance of my teachers, I’ve enhanced my skills and built <span class="highlight">professional credibility</span> by learning and using tools such as <span class="highlight">Illustrator</span> and <span class="highlight">InDesign</span> in my projects. This experience has shown me the importance of industry-standard tools in producing <span class="highlight">high-quality</span> and <span class="highlight">consistent work</span>. <br><br>
+                        <span class="how">Future actions</span>: Moving forward, I plan to deepen my expertise in <span class="highlight">Adobe Creative Cloud</span> by exploring other applications within the suite, such as <span class="highlight">Photoshop</span>, <span class="highlight">XD</span>, and <span class="highlight">After Effects</span>. I will actively seek out advanced tutorials and courses to refine my skills and stay updated with the latest features and trends. Additionally, I will continue to integrate these tools into my projects to maintain <span class="highlight">high standards</span> and stay <span class="highlight">competitive</span> in the design industry. By consistently using and mastering <span class="highlight">professional tools</span>, I aim to further enhance my capabilities and increase my attractiveness to potential employers and clients.
+                    </p>
+            
+                    <h4>Links</h4>
+                    <div class="links">
+                        <a href="LO3_PosterMedCamp.html" target="_blank">Where I used Illustrator</a>
+                        <a href="LO3_projectbranding.html" target="_blank">Where I used InDesign and Photoshop</a>
+                    </div>
+                </section>
+                
+            </div>
+        </main>
+        <script>
+
+            const dropdownContent = document.getElementById("dropdownContent");
+
+            function toggleMenu() {
+            dropdownContent.classList.toggle("show");
+            }
+
+            function filterMenu() {
+            const input = document.getElementById("mySearch");
+            const filter = input.value.toUpperCase();
+            const ul = document.getElementById("myMenu");
+            const li = ul.getElementsByTagName("li");
+
+            for (let i = 0; i < li.length; i++) {
+                const a = li[i].getElementsByTagName("a")[0];
+                const txtValue = a.textContent || a.innerText; // Handle potential textContent issues
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+                } else {
+                li[i].style.display = "none";
+                }
+            }
+            }
+
+            // Initialize the dropdown to be hidden by default
+            window.onload = function() {
+            dropdownContent.classList.remove("show");
+            }
+        </script>
+    </body>
+</html>
