@@ -154,7 +154,46 @@ background-color: #f18ea4;
     list-style-type: none;
 }
 
+/*call out*/
+.callout {
+    position: fixed;
+    top: 10%;
+    left: 7%;
+    margin-left: 20px;
+    max-width: 300px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .callout-header {
+    padding: 25px 15px;
+    background: #cc3461;
+    font-size: 30px;
+    color: white;
+  }
+  
+  .callout-container {
+    padding: 15px;
+    background-color: #ffffff;
+    color: black
+  }
+  
+  .closebtn {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  .closebtn:hover {
+    color: lightgrey;
+  }
 
+  .disc {
+    font-weight: bold;
+    color: #eb244f;
+  }
 
 /*container*/
 .container {
@@ -184,6 +223,7 @@ background-color: #f18ea4;
     padding: 2rem;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
+
 
 .Git {
     position: relative;
